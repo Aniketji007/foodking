@@ -1,11 +1,1377 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello WOrld
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font icon/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- navbar start -->
+    <nav class="py-3"></nav>   
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand d-flex fw-bold fs-3 order-1">
+            <img src="image/food king.png" alt="" class="navlogo me-3">FOOD KING
+          </a>
+      
+          <button class="btn d-block d-lg-none order-3" role="button" data-bs-toggle="offcanvas" data-bs-target="#mynav" aria-controls="mynav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end order-lg-2 w-50" id="mynav">
+            <button class="btn-close text-reset d-block d-lg-none ms-auto p-2" data-bs-dismiss="offcanvas"></button>
+            <ul class="navbar-nav mx-lg-auto px-3">
+              <li class="nav-item px-lg-2">
+                <a href="index.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">HOME</div></a>
+              </li>
+              <li class="nav-item px-lg-2">
+                <a href="menu.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">MENU</div></a>
+              </li>
+              <li class="nav-item px-lg-2">
+                <a href="#SERVICES" class="nav-link hrline hrline-lg text-danger"><div class="lghover">SERVICES</div></a>
+              </li>
+              <li class="nav-item px-lg-2">
+                <a href="blogs.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">BLOGS</div></a>
+              </li>
+              <li class="nav-item px-lg-2">
+                <a href="contacts.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">CONTACT US</div></a>
+              </li>
+              <li class="nav-item px-lg-2">
+                <a href="about.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">ABOUT</div></a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-outline-success rounded-pill order-2 order-lg-3" data-bs-toggle="modal" data-bs-target="#signinbox">Sign in</button>
+        </div>
+    </nav>
+    <nav class="py-3"></nav>
+    <!-- navbar end -->
+
+    <!-- modal sign in box start -->
+    <div class="modal fade bg-white bg-opacity-75" id="signinbox" data-bs-backdrop="static" tabindex="-1" aria-labelledby="singinboxmodal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row row-gutter">
+              <div class="col-5 d-none d-lg-block signinback">
+                <div class="d-flex h-100">
+                  <div class="my-auto">
+                    <h3 class="text-white text-center fplay">Hello, Friend!</h3>
+                    <h5 class="px-3 text-center text-white my-4 fbad">Enter your personal details and start journey with us</h5>
+                    <div class="text-center">
+                      <button class="btn btn-outline-light rounded-pill" data-bs-target="#singupboxmoda" data-bs-toggle="modal">SIGN UP</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-7 my-3">
+                <div class="d-flex mb-4 mt-2 px-sm-5 px-4">
+                  <div class="me-auto fs-3 fw-bold fplay">Food King</div>
+                  <div class="d-flex">
+                    <button class="btn-close border-success my-auto" data-bs-dismiss="modal"></button>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h2 class="mx-auto text-success fw-bold text-center px-4 flora">SIGN IN TO FOOD KING</h2>
+                </div>
+                <div class="d-flex">
+                  <div class="d-flex mx-auto my-4">
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-facebook-f text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center mx-2"><i class="fab fa-google-plus-g text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-linkedin-in text-danger"></i></div> 
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h5 class="mx-auto mb-3 px-4 text-center flora">or use your email account</h5>
+                </div>
+                <div class="">
+                  <form action="" class="px-sm-5 px-4 mb-4">
+                    <input type="email" name="" id="" maxlength="20" class="form-control" placeholder="Email" required>
+                    <input type="password" name="" id="" class="form-control mb-3 mt-3" minlength="8" placeholder="password" required>
+                    <div class="btn btn-light me-auto text-primary mb-3">Forgot your password?</div>
+                    <div class="d-flex">
+                      <button class="btn btn-primary mx-lg-auto me-auto" type="submit">SIGN IN</button>
+                      <button class="btn btn-outline-danger rounded-pill d-block d-lg-none" data-bs-target="#singupboxmoda" data-bs-toggle="modal">SIGN UP</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal sign in box end -->
+    <!-- modal sign up box start -->
+    <div class="modal fade bg-white bg-opacity-75" id="singupboxmoda" data-bs-backdrop="static" tabindex="-1" aria-labelledby="singupboxmoda" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row">
+              <div class="col-lg-7 col-12 my-3">
+                <div class="d-flex mb-4 mt-2 px-sm-5 px-4">
+                  <div class="me-auto fs-3 fw-bold fplay">Food King</div>
+                  <div class="d-flex">
+                    <button class="btn-close border-success my-auto" data-bs-dismiss="modal"></button>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h2 class="mx-auto text-success fw-bold flora">CREATE ACCOUNT</h2>
+                </div>
+                <div class="d-flex">
+                  <div class="d-flex mx-auto my-4">
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-facebook-f text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center mx-2"><i class="fab fa-google-plus-g text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-linkedin-in text-danger"></i></div> 
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h5 class="mx-auto mb-3 px-sm-5 px-4 flora">or use your email account</h5>
+                </div>
+                <div class="">
+                  <form action="" class="mb-4 px-sm-5 px-4">
+                    <input type="text" name="" id="" maxlength="20" class="form-control mb-3" placeholder="Name" required>
+                    <input type="email" name="" id="" maxlength="40" class="form-control" placeholder="Email" required>
+                    <input type="password" name="" id="" class="form-control mb-3 mt-3" minlength="8" placeholder="password" required>
+                    <div class="d-flex">
+                      <button class="btn btn-primary mx-lg-auto me-auto" type="submit">SIGN UP</button>
+                      <button class="btn btn-outline-danger rounded-pill d-block d-lg-none" data-bs-target="#signinbox" data-bs-toggle="modal">SIGN IN</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-5 d-none d-lg-block signinback">
+                <div class="d-flex h-100">
+                  <div class="my-auto">
+                    <h3 class="text-center text-white fplay">Welcome Back!</h3>
+                    <h5 class="px-3 text-center text-white my-4 fbad">To keep connected with us please login with your personal info</h5>
+                    <div class="text-center">
+                      <button class="btn btn-outline-light rounded-pill" data-bs-target="#signinbox" data-bs-toggle="modal">SIGN IN</button>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal sign up box end -->
+
+    <!-- header section start -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="image/pexels-jonathan-borba-2983101.jpg" class="d-block w-100 carouheight" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="image/olenka-kotyk-9x-PwjxC0Z8-unsplash.jpg" class="d-block w-100 carouheight" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="image/pexels-joão-pedro-3761662.jpg" class="d-block w-100 carouheight" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- home section start -->
+    <section class="container mt-4 mt-md-5">
+      <div class="row row-gutter text-center bgcolor-lg bgcolor-sm rounded">
+        <div class="col-md-4 col-12 pe-md-4 div-shadow">
+            <img src="image/partyorder.jpg" alt="" class="w-100 mb-2 mb-md-1 mb-lg-1 rounded">
+            <div class="btn btn-danger w-100">Online Food Order</div>
+        </div>
+        <div class="col-md-8 col-12 lh-sm mt-4 mt-md-0 div-shadow py-2 d-flex flex-column justify-content-evenly">
+            <div>
+              <p class="parapadding d-inline fw-bold text-danger f-s-md-6 f-s-lg-3 f-s-xl-2 f-s-xxl-2 fplay">Party Orders in Banglore -</p>
+              <p class="parapadding d-inline fw-bold f-s-md-6 f-s-lg-3 f-s-xl-2 f-s-xxl-2 fplay">Homemade Food by MasalaBox</p>
+            </div>
+            <p class="parapadding f-s-lg-6 f-s-xl-5 f-s-xxl-5">Make your special occasions extra special with our delectable party-order options!!</p>
+            <p class="parapadding f-s-lg-5 f-s-xl-5 f-s-xxl-4 fw-bolder">Throw A Party With Hearty and Delicious HomeMade Foods With Custom Party Orders. Try Delicious & Freshly Prepared Regional Cuisines That Will Leave You Craving For More.</p>
+            <div>
+              <button class="btn btn-warning fw-bold text-white mb-sm-0 mb-2">CLICK TO CALL NOW</button>
+              <button class="btn btn-success fw-bold mb-sm-0 mb-2">CLICK TO WHATSAPP NOW</button>
+            </div> 
+        </div>
+      </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- menu section start -->
+    <h2 class="mt-4 mt-md-5 text-center text-danger fplay" ID="MENU">MENU</h2>
+
+    <!--/////// carousel items large screen ///////////-->
+    <div class="text-center fw-bold fs-1 d-none d-lg-block text-success menubackground flora">Inspiration for your first order</div>
+    <div id="carouselExampleControls" class="carousel carousel-dark slide d-none d-lg-block menubackground">
+      <div class="carousel-inner">
+        <div class="carousel-item active px-xxl-3 px-xl-4 px-lg-3 px-2" data-bs-interval="false">
+          <div class="row mx-md-4 mx-lg-5 px-lg-5 mx-1 py-3">
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Pizza.jpg" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Pizza</a></div>
+              </div>
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Chicken.jpg" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Chicken</a></div>
+              </div>
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Burger.jpg" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Burger</a></div>
+              </div>
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Panner.avif" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Panner</a></div>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item px-xxl-3 px-xl-4 px-lg-3 px-2" data-bs-interval="false">
+          <div class="row mx-md-4 mx-lg-5 px-lg-5 mx-1 py-3">
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Rolls.avif" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Rolls</a></div>
+              </div>
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Chaat.avif" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Chaat</a></div>
+              </div>
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Momos.jpg" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Momos</a></div>
+              </div>
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Dal.jpg" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Dal</a></div>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item px-xxl-3 px-xl-4 px-lg-3 px-2" data-bs-interval="false">
+          <div class="row mx-md-4 mx-lg-5 px-lg-5 mx-1 py-3">
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Chaap.jpg" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Chaap</a></div>
+              </div>
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Paratha.avif" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Paratha</a></div>
+              </div>
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Cake.avif" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Cake</a></div>
+              </div>
+            <div class="col-3 px-3 px-xxl-5 text-center">
+              <div class="menuboxshadow py-4">
+                <img src="image/Biryani.avif" class="d-block w-75 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-50 mt-3 fs-6 fw-bold">Biryani</a></div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon rounded-pill" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon rounded-pill" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--/////// carousel items small screen ////////-->
+    <div class="text-center fw-bold fs-4 text-success py-1  d-none d-sm-block d-lg-none menubackground">Inspiration for your first order</div>
+    <div id="carouselExample2" class="carousel carousel-dark slide d-none d-sm-block d-lg-none">
+      <div class="carousel-inner">
+        <div class="carousel-item active px-5" data-bs-interval="false">
+          <div class="row mx-md-4 mx-1 py-2">
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Pizza.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Pizza</a></div>
+              </div>
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Chicken.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Chicken</a></div>
+              </div>
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Burger.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Burger</a></div>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item px-5" data-bs-interval="false">
+          <div class="row mx-md-4 mx-1 py-2">
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Panner.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Panner</a></div>
+              </div>
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Rolls.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Rolls</a></div>
+              </div>
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Chaat.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Chaat</a></div>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item px-5" data-bs-interval="false">
+          <div class="row mx-md-4 mx-1 py-2">
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Momos.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Momos</a></div>
+              </div>
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Dal.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Dal</a></div>
+              </div>
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Chaap.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Chaap</a></div>
+              </div>
+          </div>
+      </div>
+        <div class="carousel-item px-5" data-bs-interval="false">
+          <div class="row mx-md-4 mx-1 py-2">
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Paratha.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Paratha</a></div>
+              </div>
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Cake.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Cake</a></div>
+              </div>
+            <div class="col-4 px-1 px-sm-2 text-center">
+              <div class="menuboxshadow p-4">
+                <img src="image/Biryani.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center w-75 mt-3 fs-6">Biryani</a></div>
+              </div>
+          </div>
+        </div>  
+      </div>
+      <button class="carousel-control-prev crsewidthsm" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon rounded-pill" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next  crsewidthsm" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+        <span class="carousel-control-next-icon rounded-pill" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--/////// carousel items extra small screen //////-->
+    <div class="text-center fw-bold fs-4 text-success py-1  d-sm-none menubackground">Inspiration for your first order</div>
+    <div id="carouselExamplee3" class="carousel carousel-dark slide d-sm-none d-lg-none">
+      <div class="carousel-inner">
+        <div class="carousel-item active px-4" data-bs-interval="false">
+          <div class="row mx-1 py-2">
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Pizza.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Pizza</a>
+              </div>                                                                                  
+            </div>
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Chicken.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Chicken</a>
+              </div>                                                                                  
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item px-4" data-bs-interval="false">
+          <div class="row mx-1 py-2">
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Burger.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Burger</a>
+              </div>                                                                                  
+            </div>
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Panner.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Panner</a>
+              </div>                                                                                  
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item px-4" data-bs-interval="false">
+          <div class="row mx-1 py-2">
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Rolls.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Rolls</a>
+              </div>                                                                                  
+            </div>
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                  <img src="image/Chaat.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Chaat</a>
+                </div>                                                                                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item px-4" data-bs-interval="false">
+          <div class="row mx-1 py-2">
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Momos.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Momos</a>
+              </div>
+            </div>
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Dal.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Dal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item px-4" data-bs-interval="false">
+          <div class="row mx-1 py-2">
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Chaap.jpg" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Chaap</a>
+              </div>                                                                                  
+            </div>
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Paratha.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Paratha</a>
+              </div>
+            </div>
+          </div>
+        </div>         
+        <div class="carousel-item px-4" data-bs-interval="false">
+          <div class="row mx-1 py-2">
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                  <img src="image/Cake.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Cake</a>
+                </div>
+            </div>
+            <div class="col-6 px-1 text-center">
+              <div class="menuboxshadow px-1 py-2">
+                <img src="image/Biryani.avif" class="d-block w-100 mx-auto rounded-circle" alt="..."><a href="" class="btn btn-danger buttonshadow text-center mt-2 fw-bold">Biryani</a>
+              </div>                                                                                  
+            </div>
+          </div>
+        </div>   
+      </div>
+      <button class="carousel-control-prev crsewidth" type="button" data-bs-target="#carouselExamplee3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon rounded-pill me-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next crsewidth" type="button" data-bs-target="#carouselExamplee3" data-bs-slide="next">
+        <span class="carousel-control-next-icon rounded-pill ms-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--//////// menu section item ////////-->
+    <section class="menubackground mt-2">
+      <div class="container">
+        <div class="row row-cols-lg-4 row-cols-xl-4 row-cols-1 row-cols-sm-2 justify-content-center row-gutter">
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Ovenstory-Pizza.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Ovenstory Pizza</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="parapadding col-10">Fast Food, italian, Pizza,s...</p>
+                  <p class="parapadding col-2 text-end">&#8377;100</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/M-Gopinath-South-Indian-Cafe.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">M Gopinath Cafe</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">South Indian</p>
+                  <p class="col-2 text-end parapadding">&#8377;160</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Hot-Pot.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Hot pot</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Chinese, Fast Food</p>
+                  <p class="col-2 text-end parapadding">&#8377;120</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Friends-restaurant.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Friends Restaurant</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">North Indian</p>
+                  <p class="col-2 text-end parapadding">&#8377;200</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Biryani-By-Kilo.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Biryani By Kilo</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Biryani, Mughlai, Kebab</p>
+                  <p class="col-2 text-end parapadding">&#8377;190</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Shawarma-King_s.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Shawarma King's</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Lebanese, Fast Food, Rolls</p>
+                  <p class="col-2 text-end parapadding">&#8377;210</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Marathi-Katta.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Marathi Katta</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">North indian, Maharashtrain</p>
+                  <p class="col-2 text-end parapadding">&#8377;80</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Carnatic-Cafe.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Carnatic Cafe</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">South Indian</p>
+                  <p class="col-2 text-end parapadding">&#8377;170</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- menu section end -->
+
+    <!-- menu section item collapse start -->
+    <section class="collapse menubackground" id="menuitemcolap">
+      <div class="container">
+        <div class="row row-cols-lg-4 row-cols-xl-4 row-cols-1 row-cols-sm-2 justify-content-center row-gutter">
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/The hot chinese.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">The Hot Chinese</h5><p class="parapadding badge bg-success">3.6</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="parapadding col-10">Chinese, Momos, Rolls, Fa...</p>
+                  <p class="parapadding col-2 text-end">&#8377;300</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Nathu's pastry.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Nathu's Pastry Shop</h5><p class="parapadding badge bg-success">4.6</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Fast Food, Beverages</p>
+                  <p class="col-2 text-end parapadding">&#8377;260</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Sugar & spice.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Sugar & Spice</h5><p class="parapadding badge bg-success">4.4</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Bakery, Fast Food</p>
+                  <p class="col-2 text-end parapadding">&#8377;320</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Behrouz biryani.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Behrouz Biryani</h5><p class="parapadding badge bg-success">4.1</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Biryani, Kebab</p>
+                  <p class="col-2 text-end parapadding">&#8377;225</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Bikanervala angan.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Bikanervala Angan</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Mithai, Street Food</p>
+                  <p class="col-2 text-end parapadding">&#8377;390</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Punjab sweet.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Punjab Sweet</h5><p class="parapadding badge bg-success">4.0</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">North Indian, Fast food</p>
+                  <p class="col-2 text-end parapadding">&#8377;120</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/AMA cafe.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">AMA Cafe</h5><p class="parapadding badge bg-success">4.3</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Cafe, Continental</p>
+                  <p class="col-2 text-end parapadding">&#8377;130</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Slay coffee.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">SLAY Coffee</h5><p class="parapadding badge bg-success">4.6</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Coffee, Shake</p>
+                  <p class="col-2 text-end parapadding">&#8377;70</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Sri saravana.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Sri Saravana</h5><p class="parapadding badge bg-success">3.6</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="parapadding col-10">South Indian</p>
+                  <p class="parapadding col-2 text-end">&#8377;180</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Shri ganesh.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Shri Ganesh Corner</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Mithai, Street Food</p>
+                  <p class="col-2 text-end parapadding">&#8377;120</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Aunty's prathe.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Aunty's Paranthe</h5><p class="parapadding badge bg-success">3.9</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">North Indian, Fast Food</p>
+                  <p class="col-2 text-end parapadding">&#8377;110</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Starbucks coffee.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Starbucks Coffee</h5><p class="parapadding badge bg-success">4.0</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Coffee, Beverages</p>
+                  <p class="col-2 text-end parapadding">&#8377;240</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Arya bhavan.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Arya Bhavan</h5><p class="parapadding badge bg-success">4.2</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">South Indian, Street Food</p>
+                  <p class="col-2 text-end parapadding">&#8377;230</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Hira Sweets.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Hira Sweets</h5><p class="parapadding badge bg-success">4.1</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Mithai, North Indian, South</p>
+                  <p class="col-2 text-end parapadding">&#8377;160</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Faasos.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Faasos</h5><p class="parapadding badge bg-success">4.3</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">Fast Food, Rolls, Wraps</p>
+                  <p class="col-2 text-end parapadding">&#8377;190</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col menu-size-sm menu-size-md menu-size-lg menu-size-xl menu-size-xxl">
+            <div class="bg-white">
+              <div class="card overflow-hidden crdhover">
+                <div class="text-center">
+                  <img src="image/Saravana mess.jpg" class="card-img-top w-100 rounded" alt="...">
+                </div>
+                <div class="card-body cadpadding">
+                  <div class="d-flex">
+                    <h5 class="card-title me-auto">Saravana Mess</h5><p class="parapadding badge bg-success">3.9</p>
+                  </div>
+                  <div class="row card-text row-gutter">
+                  <p class="col-10 parapadding">South Indian, North Indian</p>
+                  <p class="col-2 text-end parapadding">&#8377;240</p>
+                  </div>
+                </div>
+                <div class="card-footer row">
+                  <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup class="fs-5">&plus;</sup></a>
+                  <form action="" class="col-4">
+                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center menubackground">
+    <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#menuitemcolap">See More</button>
+    </div>
+    <!-- menu section item collapse start -->
+    <!-- menu section end -->
+
+    <!-- sevice section start -->
+    <section class="background mt-4" id="SERVICES">
+      <div class="servibg bg-opacity-75 text-white py-3">
+      <div class="container">
+        <div class="text-center">
+          <p class="fs-3 text-success flora">Come & Experience Our Best of World Class Cousine</p>
+          <p class="col-11 col-sm-9 col-lg-7 col-xl-6 mx-auto fs-5 fMontserrat">Online food delivery services enable its customers to stick to healthy eating plans when if they wanted to forego preparing meals or dine out.</p>
+          <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-1 px-md-0 px-2 justify-content-center">
+            <div class="col px-4 px-md-3 text-center py-3">
+              <img src="image/delivery-box.png" alt="">
+              <div class="fw-bold f-s-lg-4 f-s-md-4 f-s-sm-4 f-s-xl-3 f-s-xxl-3 py-3">Breakfast Deal</div>
+              <div class="fs-5"> All happiness depends on a leisurely breakfast. There is nothing better than a proper breakfast.</div>
+            </div>
+            <div class="col px-4 px-md-3 text-center py-3">
+              <img src="image/operator.png" alt="">
+              <div class="fw-bold f-s-lg-4 f-s-md-4 f-s-sm-4 f-s-xl-3 f-s-xxl-3 py-3">Special Lunch</div>
+              <div class="fs-5">Low-maintenance is the name of the game. Make this spicy-sweet number the night before.</div>
+            </div>
+            <div class="col px-md-2 px-4 px-lg-3 text-center py-3">
+              <img src="image/smartphone.png" alt="">
+              <div class="fw-bold f-s-lg-4 f-s-md-4 f-s-sm-4 f-s-xl-3 f-s-xxl-3 py-3">Special Dinner</div>
+              <div class="fs-5">There is only one difference between a long life and a good dinner: that, in the dinner, the sweets come last.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- service section end -->
+
+    <!--blogs chef section start -->
+    <h2 class="mt-4 mt-md-5 text-center text-danger fplay" ID="BLOGS">OUR CHEF</h2>
+    <section class="container mt-4">
+      <div class="row row-cols-lg-2 row-cols-1 row-gutter">
+        <div class="col py-sm-4 px-sm-4 py-3">
+          <div class="row row-gutter">
+            <div class="col-sm-12 col-11 mx-auto rounded-3 blogsshadow">
+              <div class="row row-gutter">
+                <div class="col-sm-5 text-center order-sm-2"><img src="image/team1.png" alt="" class="w-100 py-lg-3 py-xl-0"></div>
+                <div class="col-sm-7 text-sm-end text-center p-3">
+                  <div class="d-flex h-100 flex-column">
+                    <div class="row my-auto row-gutter">
+                      <h5 class="f-s-md-3 f-s-xxl-3 fplay">JHON WHITE</h5>
+                      <h5 class="blockquote-footer fs-5 text-danger">CHEF</h5>
+                      <h6 class="mb-3 f-s-md-5 f-s-xxl-5 fbad fw-bold">Indian Food blog with Indian Vegetarian Recipes, Indian Non Veg Recipes, South Indian Recipes and Indian regional cuisine.</h6>
+                      <div class="f-s-md-5">
+                        <a href="" class="fab fa-twitter text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fas fa-book text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fas fa-rocket text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fab fa-facebook-f text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fab fa-telegram-plane text-decoration-none text-success mx-1"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 rounded-3 blogimage">
+                <div class="d-flex h-100 flex-column">
+                  <div class="row my-auto row-gutter">
+                    <div class="col-sm-5 text-center order-sm-2">
+                      <img src="image/team1.png" alt="" class="w-100 py-lg-3 py-xl-0">
+                    </div>
+                    <div class="col-sm-7 text-center my-auto px-sm-4 px-2">
+                      <h1 class="fplay">JHON WHITE</h1>
+                      <h5 class="blockquote-footer fs-5 text-danger">CHEF</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="col py-sm-4 px-sm-4 py-3">
+          <div class="row row-gutter">
+            <div class="col-sm-12 col-11 mx-auto rounded-3 blogsshadow">
+              <div class="row row-gutter">
+                <div class="col-sm-5 text-center"><img src="image/team2.png" alt="" class="w-100 py-lg-3 py-xl-0"></div>
+                <div class="col-sm-7 text-sm-start text-center p-3">
+                  <div class="d-flex h-100 flex-column">
+                    <div class="row my-auto row-gutter">
+                    <h5 class="f-s-md-3 f-s-xxl-3 fplay">DAVID JOHNSON</h5>
+                    <h5 class="blockquote-footer fs-5 text-danger">CHEF</h5>
+                    <h6 class="mb-3 f-s-md-5 f-s-xxl-5 fbad fw-bold">Welcome to my Flavorful Fusion Kitchen. Find Authentic Indian recipes with a lighter version, Fusion of Spices and World Cuisine.</h6>
+                    <div class="f-s-md-5">
+                      <a href="" class="fab fa-twitter text-decoration-none text-success mx-1"></a>
+                      <a href="" class="fas fa-book text-decoration-none text-success mx-1"></a>
+                      <a href="" class="fas fa-rocket text-decoration-none text-success mx-1"></a>
+                      <a href="" class="fab fa-facebook-f text-decoration-none text-success mx-1"></a>
+                      <a href="" class="fab fa-telegram-plane text-decoration-none text-success mx-1"></a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 rounded-3 blogimage">
+                <div class="d-flex h-100 flex-column">
+                  <div class="row my-auto row-gutter">
+                    <div class="col-sm-5 text-center">
+                      <img src="image/team2.png" alt="" class="w-100 py-lg-3 py-xl-0">
+                    </div>
+                    <div class="col-sm-7 text-center my-auto px-sm-4 px-2">
+                      <h1 class="fplay">DAVID JOHNSON</h1>
+                      <h5 class="blockquote-footer fs-5 text-danger">CHEF</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col py-sm-4 px-sm-4 py-3">
+          <div class="row row-gutter">
+            <div class="col-sm-12 col-11 mx-auto rounded-3 blogsshadow">
+              <div class="row row-gutter">
+                <div class="col-sm-5 text-center order-sm-2"><img src="image/team3.png" alt="" class="w-100 py-lg-3 py-xl-0"></div>
+                <div class="col-sm-7 text-sm-end text-center p-3">
+                  <div class="d-flex h-100 flex-column">
+                    <div class="row my-auto row-gutter">
+                      <h5 class="f-s-md-3 f-s-xxl-3 fplay">SAM KRONSHTAIN</h5>
+                      <h5 class="blockquote-footer fs-5 text-danger">CHEF</h5>
+                      <h6 class="mb-3 f-s-md-5 f-s-xxl-5 fbad fw-bold">Mummy recipes are all about how to make recipes in an easy way as well as with simple things that we find in our kitchen.</h6>
+                      <div class="f-s-md-5">
+                        <a href="" class="fab fa-twitter text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fas fa-book text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fas fa-rocket text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fab fa-facebook-f text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fab fa-telegram-plane text-decoration-none text-success mx-1"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 rounded-3 blogimage">
+                <div class="d-flex h-100 flex-column">
+                  <div class="row my-auto row-gutter">
+                    <div class="col-sm-5 text-center order-sm-2">
+                      <img src="image/team3.png" alt="" class="w-100 py-lg-3 py-xl-0">
+                    </div>
+                    <div class="col-sm-7 text-center my-auto px-sm-4 px-2">
+                      <h1 class="fplay">SAM KRONSHTAIN</h1>
+                      <h5 class="blockquote-footer fs-5 text-danger">CHEF</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="col py-sm-4 px-sm-4 py-3">
+          <div class="row row-gutter">
+            <div class="col-sm-12 col-11 mx-auto rounded-3 blogsshadow">
+              <div class="row row-gutter">
+                <div class="col-sm-5 text-center"><img src="image/team4.png" alt="" class="w-100 py-lg-3 py-xl-0"></div>
+                <div class="col-sm-7 text-sm-start text-center p-3">
+                  <div class="d-flex h-100 flex-column">
+                    <div class="row my-auto row-gutter">
+                      <h5 class="f-s-md-3 f-s-xxl-3 fplay">JOHN FRANKLIN</h5>
+                      <h5 class="blockquote-footer fs-5 text-danger">CHEF</h5>
+                      <h6 class="mb-3 f-s-md-5 f-s-xxl-5 fbad fw-bold">A blog where I share my trial and errors in my kitchen!!! Welcome to my little space, filled with awesome food and sweet nothings..</h6>
+                      <div class="f-s-md-5">
+                        <a href="" class="fab fa-twitter text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fas fa-book text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fas fa-rocket text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fab fa-facebook-f text-decoration-none text-success mx-1"></a>
+                        <a href="" class="fab fa-telegram-plane text-decoration-none text-success mx-1"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 rounded-3 blogimage">
+                <div class="d-flex h-100 flex-column">
+                  <div class="row my-auto row-gutter">
+                    <div class="col-sm-5 text-center">
+                      <img src="image/team4.png" alt="" class="w-100 py-lg-3 py-xl-0">
+                    </div>
+                    <div class="col-sm-7 text-center my-auto px-sm-4 px-2">
+                      <h1 class="fplay">JOHN FRANKLIN</h1>
+                      <h5 class="blockquote-footer fs-5 text-danger">CHEF</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--blogs chef section end -->
+
+    <!-- contact us start -->
+    <section class="container px-3" id="CONTACTUS">
+      <div class="text-center">
+        <h2 class="fw-bold my-4 text-danger fplay">CONTACT US</h2>
+      </div>
+      <div class="row mb-3 justify-content-center">
+        <div class="col-8 col-lg-4 text-center">
+          <i class="fas fa-mobile-alt fs-2 text-success mb-4"></i>
+          <h5>
+            Call: +91 8652345678<br>
+            Monday-Friday (7am to 6pm)
+          </h5>
+        </div>
+        <div class="col-8 col-lg-4 text-center mt-3 mt-sm-0">
+          <i class="far fa-envelope fs-2 text-success mb-4"></i>
+          <h5>
+            Email: foodking@gmail.com
+            Web: www.foodking.com
+          </h5>
+        </div>
+        <div class="col-8 col-lg-4 text-center">
+          <i class="fas fa-map-marker-alt fs-2 text-success mb-4 mt-3 mt-lg-0"></i>
+          <h5>
+            Location: B-25 Harkesh nagar okhla<br>
+            phase-2 New Delhi-110020
+          </h5>
+        </div>
+      </div>
+      <div class="my-4">
+        <div class="row justify-content-center row-gutter">
+          <div class="col-8 col-md-6 mb-4 mb-md-0 pe-md-3">
+            <div class="h-100 contactmap">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14020.412189417248!2d77.26645873195264!3d28.536622219289868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce157f9184cc9%3A0xfc7984896d381e31!2sOkhla%20Phase%20II%2C%20Okhla%20Industrial%20Estate%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1636562885514!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" class="w-100 h-100 rounded-3"></iframe>
+            </div>
+          </div>
+          <div class="col-8 col-md-6 text-center ps-md-3">
+            <div class="contactform">
+              <form action="" class="">
+                <input type="text" name="" id="" class="form-control mb-3 p-2" placeholder="Your Name">
+                <input type="email" name="" id="" class="form-control mb-3 p-2" placeholder="Your Email">
+                <input type="text" name="" id="" class="form-control mb-3 p-2" placeholder="Subject">
+                <textarea name="" id=""  class="form-control mb-3 p-2" rows="4" placeholder="Message"></textarea>
+                <button type="submit" class="btn btn-outline-dark fs-6 fw-bold">SEND MESSAGE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact us end -->
+
+    <!-- about us footer section start-->
+    <section class="bg-dark pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8 col-sm-7 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Food King</h6>
+            <h6 class="text-white fw-light mb-4">
+              Location: B-25 Harkesh nagar okhla<br>
+              phase-2 New Delhi-110020
+            </h6>
+            <h6 class="text-white fw-light mb-4">
+              Phone no: +91 8652345678<br>
+              Email: foodking@gmail.com
+            </h6>
+            <h5 class="text-white footsocial d-flex mb-3 pt-1">
+              <div class="d-flex mx-auto mx-sm-0">
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-twitter m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-facebook-f m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-instagram m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-skype m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-linkedin-in m-auto"></i></a>
+              </div>
+            </h5>
+          </div>
+          <div class="col-8 col-sm-5 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Useful Links</h6>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Home</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>About Us</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Services</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Terms of Services</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Privacy policy</a>
+          </div>
+          <div class="col-8 col-sm-5 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Our Services</h6>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>personal Event</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Private Dining</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Business Catering</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Party Consulting</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Diet Menu</a>
+          </div>
+          <div class="col-8 col-sm-7 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Our Newsletter</h6>
+            <div></div>
+            <div>
+              <form action="" class="row">
+                <input type="text" name="" id="" class="form-conrol rounded-0 mb-3 mx-auto mx-sm-0 w-75">
+                <button type="text" name="" id="" class="form-control btn-success rounded-0 w-50 mb-3 mx-auto mx-sm-0">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-3 mt-4 text-center copyrightbackground">
+        <div class="text-white copyright fw-bold">&copy; Copyright Foodking. All Rights Reserved</div>
+        <div class="text-white copyright d-flex justify-content-center">
+          <div>Designed by</div>
+          <p class="text-success">&nbsp;Bootstrapmade</p>
+        </div>
+      </div>
+    </section>
+    <!-- about us footer section end-->
+  </body>
 </html>
