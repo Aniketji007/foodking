@@ -1,0 +1,2311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font icon/css/all.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="py-3"></nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex fw-bold fs-3 order-1">
+                <img src="image/food king.png" alt="" class="navlogo me-3">FOOD KING
+            </a>
+
+            <button class="btn d-block d-lg-none order-3" role="button" data-bs-toggle="offcanvas" data-bs-target="#mynav" aria-controls="mynav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <div class="offcanvas offcanvas-end order-lg-2 w-50" id="mynav">
+                <button class="btn-close text-reset d-block d-lg-none ms-auto p-2" data-bs-dismiss="offcanvas"></button>
+                <ul class="navbar-nav mx-lg-auto px-3">
+                    <li class="nav-item px-lg-2">
+                        <a href="index.html" class="nav-link hrline hrline-lg text-danger">
+                            <div class="lghover">HOME</div>
+                        </a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a href="menu.html" class="nav-link hrline hrline-lg text-danger">
+                            <div class="lghover">MENU</div>
+                        </a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a href="#SERVICES" class="nav-link hrline hrline-lg text-danger">
+                            <div class="lghover">SERVICES</div>
+                        </a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a href="blogs.html" class="nav-link hrline hrline-lg text-danger">
+                            <div class="lghover">BLOGS</div>
+                        </a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a href="contacts.html" class="nav-link hrline hrline-lg text-danger">
+                            <div class="lghover">CONTACT US</div>
+                        </a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a href="about.html" class="nav-link hrline hrline-lg text-danger">
+                            <div class="lghover">ABOUT</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-success rounded-pill order-2 order-lg-3" data-bs-toggle="modal" data-bs-target="#signinbox">Sign in</button>
+        </div>
+    </nav>
+    <nav class="py-3"></nav>
+    <!-- navbar end -->
+
+    <!-- modal sign in box start -->
+    <div class="modal fade bg-white bg-opacity-75" id="signinbox" data-bs-backdrop="static" tabindex="-1" aria-labelledby="singinboxmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row row-gutter">
+                        <div class="col-5 d-none d-lg-block signinback">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <h3 class="text-white text-center fplay">Hello, Friend!</h3>
+                                    <h5 class="px-3 text-center text-white my-4 fbad">Enter your personal details and start journey with us
+                                    </h5>
+                                    <div class="text-center">
+                                        <button class="btn btn-outline-light rounded-pill" data-bs-target="#singupboxmoda" data-bs-toggle="modal">SIGN UP</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 my-3">
+                            <div class="d-flex mb-4 mt-2 px-sm-5 px-4">
+                                <div class="me-auto fs-3 fw-bold fplay">Food King</div>
+                                <div class="d-flex">
+                                    <button class="btn-close border-success my-auto" data-bs-dismiss="modal"></button>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <h2 class="mx-auto text-success fw-bold text-center px-4 flora">SIGN IN TO FOOD KING</h2>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex mx-auto my-4">
+                                    <div class="border rounded-circle modicon text-center"><i class="fab fa-facebook-f text-danger"></i>
+                                    </div>
+                                    <div class="border rounded-circle modicon text-center mx-2"><i class="fab fa-google-plus-g text-danger"></i></div>
+                                    <div class="border rounded-circle modicon text-center"><i class="fab fa-linkedin-in text-danger"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <h5 class="mx-auto mb-3 px-4 text-center flora">or use your email account</h5>
+                            </div>
+                            <div class="">
+                                <form action="" class="px-sm-5 px-4 mb-4">
+                                    <input type="email" name="" id="" maxlength="20" class="form-control" placeholder="Email" required>
+                                    <input type="password" name="" id="" class="form-control mb-3 mt-3" minlength="8" placeholder="password" required>
+                                    <div class="btn btn-light me-auto text-primary mb-3">Forgot your password?</div>
+                                    <div class="d-flex">
+                                        <button class="btn btn-primary mx-lg-auto me-auto" type="submit">SIGN IN</button>
+                                        <button class="btn btn-outline-danger rounded-pill d-block d-lg-none" data-bs-target="#singupboxmoda" data-bs-toggle="modal">SIGN UP</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal sign in box end -->
+    <!-- modal sign up box start -->
+    <div class="modal fade bg-white bg-opacity-75" id="singupboxmoda" data-bs-backdrop="static" tabindex="-1" aria-labelledby="singupboxmoda" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row">
+                        <div class="col-lg-7 col-12 my-3">
+                            <div class="d-flex mb-4 mt-2 px-sm-5 px-4">
+                                <div class="me-auto fs-3 fw-bold fplay">Food King</div>
+                                <div class="d-flex">
+                                    <button class="btn-close border-success my-auto" data-bs-dismiss="modal"></button>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <h2 class="mx-auto text-success fw-bold flora">CREATE ACCOUNT</h2>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex mx-auto my-4">
+                                    <div class="border rounded-circle modicon text-center"><i class="fab fa-facebook-f text-danger"></i>
+                                    </div>
+                                    <div class="border rounded-circle modicon text-center mx-2"><i class="fab fa-google-plus-g text-danger"></i></div>
+                                    <div class="border rounded-circle modicon text-center"><i class="fab fa-linkedin-in text-danger"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <h5 class="mx-auto mb-3 px-sm-5 px-4 flora">or use your email account</h5>
+                            </div>
+                            <div class="">
+                                <form action="" class="mb-4 px-sm-5 px-4">
+                                    <input type="text" name="" id="" maxlength="20" class="form-control mb-3" placeholder="Name" required>
+                                    <input type="email" name="" id="" maxlength="40" class="form-control" placeholder="Email" required>
+                                    <input type="password" name="" id="" class="form-control mb-3 mt-3" minlength="8" placeholder="password" required>
+                                    <div class="d-flex">
+                                        <button class="btn btn-primary mx-lg-auto me-auto" type="submit">SIGN UP</button>
+                                        <button class="btn btn-outline-danger rounded-pill d-block d-lg-none" data-bs-target="#signinbox" data-bs-toggle="modal">SIGN IN</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-5 d-none d-lg-block signinback">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <h3 class="text-center text-white fplay">Welcome Back!</h3>
+                                    <h5 class="px-3 text-center text-white my-4 fbad">To keep connected with us please login with your personal info</h5>
+                                    <div class="text-center">
+                                        <button class="btn btn-outline-light rounded-pill" data-bs-target="#signinbox" data-bs-toggle="modal">SIGN IN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal sign up box end -->
+
+    <!-- home section start -->
+    <section id="menubackground">
+        <div>
+            <h1 class="fw-bold text-white foswald text-center pt-5 pb-3">MENU</h1>
+            <h4 class="fw-bold text-white mt-3 pb-5 fs-3 fbad text-center">Traditional Japanese techniques and recipes combined with the freshest ingredients Sonoma's wine country offers</h4>
+        </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- menu item start -->
+    <div class="my-5 d-none d-sm-block">
+        <div class="container-lg py-5">
+            <!-- menu item large screen start -->
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <!-- <div class="carousel-indicators menucaroeffect">
+            <div data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Indian</div>
+            <div data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">Continental</div>
+            <div data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">Fit N Fab</div>
+            <div data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">Fresh Desserts</div>
+            <div data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5">Big Plates</div>
+          </div> -->
+                <div class="d-flex justify-content-between justify-content-md-center">
+                    <div type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" class="fs-5 fw-bold mx-lg-3 me-md-4">Indian</div>
+                    <div type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="fs-5 fw-bold mx-lg-3 me-md-4">Continental</div>
+                    <div type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="fs-5 fw-bold mx-lg-3 me-md-4">Fit N Fab</div>
+                    <div type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class="fs-5 fw-bold mx-lg-3 me-md-4">Fresh Desserts</div>
+                    <div type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5" class="fs-5 fw-bold mx-lg-3 me-md-4">Big Plates</div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item transicarousel active">
+                        <div class="row px-0">
+                            <div class="col-12">
+                                <div class="row row-cols-2 row-cols-lg-3">
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden overflow-hidden">
+                                                <img src="image/indian food 1.jpg" class="card-img-top w-100 rounded menuzoomhover menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/indian food 2.jpeg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/indian food 3.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/indian food 4.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/indian food 5.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/indian food 6.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/indian food 7.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/indian food 8.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/indian food 9.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item transicarousel">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row row-cols-2 row-cols-lg-3">
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/continental 1.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/continental 2.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/continental 3.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/continental 4.jpeg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/continental  5.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/continental 6.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/continental 7.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item transicarousel">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row row-cols-2 row-cols-lg-3">
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fit & fab 1.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fit & fab 2.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fit & fab 3.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fit & fab 4.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fit & fab 5.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fit & fab 6.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fit & fab 7.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fit & fab 8.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fit & fab 9.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item transicarousel">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row row-cols-2 row-cols-lg-3">
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fresh dessert 1.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fresh dessert 2.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fresh dessert 3.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fresh dessert 4.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fresh dessert 5.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fresh dessert 6.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fresh dessert 7.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/fresh dessert 8.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item transicarousel">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row row-cols-2 row-cols-lg-3">
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/big plates 1.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/big plates 2.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/big plates 3.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/big plates 4.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/big plates 5.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col p-lg-4 p-sm-4 p-md-5 p-xl-4">
+                                        <div class="card overflow-hidden crdhover">
+                                            <div class="text-center overflow-hidden">
+                                                <img src="image/big plates 6.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                            </div>
+                                            <div class="card-body cadpadding">
+                                                <div class="d-flex">
+                                                    <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                                    <p class="parapadding badge bg-success">4.2</p>
+                                                </div>
+                                                <div class="row card-text row-gutter">
+                                                    <p class="col-10 parapadding">South Indian</p>
+                                                    <p class="col-2 text-end parapadding">&#8377;170</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer row">
+                                                <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                            class="fs-5">&plus;</sup></a>
+                                                <form action="" class="col-4">
+                                                    <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <div class="page-link" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">Previous</div>
+            </li>
+            <li class="page-item">
+              <div class="page-link" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">1</div>
+            </li>
+            <li class="page-item">
+              <div class="page-link" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">2</div>
+            </li>
+            <li class="page-item">
+              <div class="page-link" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">3</div>
+            </li>
+            <li class="page-item">
+              <div class="page-link" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">4</div>
+            </li>
+            <li class="page-item">
+              <div class="page-link" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5">5</div>
+            </li>
+            <li class="page-item">
+              <div class="page-link" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">Next</div>
+            </li>
+          </ul>
+        </nav> -->
+            <!-- menu item large screen end -->
+        </div>
+    </div>
+    <!-- menu item large screen end -->
+
+    <!-- menu item small screen start -->
+    <div class="container d-block d-sm-none">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item my-3 border-0">
+                <div id="flush-headingOne">
+                    <div class="accoritem text-center fs-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Indian Food
+                    </div>
+                </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0">
+                        <div class="row row-cols-1 row-gutter justify-content-center">
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/indian food 1.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/indian food 2.jpeg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/indian food 3.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/indian food 4.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/indian food 5.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/indian food 6.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/indian food 7.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/indian food 8.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/indian food 9.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item my-3 border-0">
+                <div id="flush-headingTwo">
+                    <div class="accoritem collapsed text-center fs-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Continental
+                    </div>
+                </div>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0">
+                        <div class="row row-cols-1 row-gutter justify-content-center">
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/continental 1.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/continental 2.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/continental 3.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/continental 4.jpeg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/continental  5.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/continental 6.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/continental 7.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item my-3 border-0">
+                <div id="flush-headingThree">
+                    <div class="accoritem collapsed text-center fs-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Fit N Fab
+                    </div>
+                </div>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0">
+                        <div class="row row-cols-1 row-gutter justify-content-center">
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fit & fab 1.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fit & fab 2.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fit & fab 3.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fit & fab 4.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fit & fab 5.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fit & fab 6.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fit & fab 7.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fit & fab 8.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fit & fab 9.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item my-3 border-0">
+                <div id="flush-headingFour">
+                    <div class="accoritem collapsed text-center fs-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Fresh Dessert
+                    </div>
+                </div>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0">
+                        <div class="row row-cols-1 row-gutter justify-content-center">
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fresh dessert 1.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fresh dessert 2.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fresh dessert 3.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fresh dessert 4.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fresh dessert 5.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fresh dessert 6.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fresh dessert 7.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/fresh dessert 8.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item my-3 border-0">
+                <div id="flush-headingFive">
+                    <div class="accoritem collapsed text-center fs-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Big Plates
+                    </div>
+                </div>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0">
+                        <div class="row row-cols-1 row-gutter justify-content-center">
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/big plates 1.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/big plates 2.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/big plates 3.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/big plates 4.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/big plates 5.jpg" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col blog-menu-size-sm">
+                                <div class="card overflow-hidden crdhover">
+                                    <div class="text-center overflow-hidden">
+                                        <img src="image/big plates 6.JPG" class="card-img-top w-100 rounded menuzoomhover" alt="...">
+                                    </div>
+                                    <div class="card-body cadpadding">
+                                        <div class="d-flex">
+                                            <h5 class="card-title me-auto">Carnatic Cafe</h5>
+                                            <p class="parapadding badge bg-success">4.2</p>
+                                        </div>
+                                        <div class="row card-text row-gutter">
+                                            <p class="col-10 parapadding">South Indian</p>
+                                            <p class="col-2 text-end parapadding">&#8377;170</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer row">
+                                        <a href="#" class="btn btn-danger col-7 me-auto buttonshadow">ADD TO CART<sup
+                        class="fs-5">&plus;</sup></a>
+                                        <form action="" class="col-4">
+                                            <input type="number" name="" id="" class="form-control" value="0" min="0" max="100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu item small screen end -->
+    <!-- menu item end -->
+
+
+    <!-- about us footer section start-->
+    <section class="bg-dark pt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-7 col-md-3 text-center text-sm-start">
+                    <h6 class="text-white fw-bold mb-3">Food King</h6>
+                    <h6 class="text-white fw-light mb-4">
+                        Location: B-25 Harkesh nagar okhla<br> phase-2 New Delhi-110020
+                    </h6>
+                    <h6 class="text-white fw-light mb-4">
+                        Phone no: +91 8652345678<br> Email: foodking@gmail.com
+                    </h6>
+                    <h5 class="text-white footsocial d-flex mb-3 pt-1">
+                        <div class="d-flex mx-auto mx-sm-0">
+                            <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i
+                  class="fab fa-twitter m-auto"></i></a>
+                            <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i
+                  class="fab fa-facebook-f m-auto"></i></a>
+                            <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i
+                  class="fab fa-instagram m-auto"></i></a>
+                            <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i
+                  class="fab fa-skype m-auto"></i></a>
+                            <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i
+                  class="fab fa-linkedin-in m-auto"></i></a>
+                        </div>
+                    </h5>
+                </div>
+                <div class="col-8 col-sm-5 col-md-3 text-center text-sm-start">
+                    <h6 class="text-white fw-bold mb-3">Useful Links</h6>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Home</a><br>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>About Us</a><br>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Services</a><br>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Terms of Services</a><br>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Privacy policy</a>
+                </div>
+                <div class="col-8 col-sm-5 col-md-3 text-center text-sm-start">
+                    <h6 class="text-white fw-bold mb-3">Our Services</h6>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>personal Event</a><br>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Private Dining</a><br>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Business Catering</a><br>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Party Consulting</a><br>
+                    <a href="" class="text-white fw-light ps-2 text-decoration-none"><i
+              class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Diet Menu</a>
+                </div>
+                <div class="col-8 col-sm-7 col-md-3 text-center text-sm-start">
+                    <h6 class="text-white fw-bold mb-3">Our Newsletter</h6>
+                    <div></div>
+                    <div>
+                        <form action="" class="row">
+                            <input type="text" name="" id="" class="form-conrol rounded-0 mb-3 mx-auto mx-sm-0 w-75">
+                            <button type="text" name="" id="" class="form-control btn-success rounded-0 w-50 mb-3 mx-auto mx-sm-0">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 mt-4 text-center copyrightbackground">
+            <div class="text-white copyright fw-bold">&copy; Copyright Foodking. All Rights Reserved</div>
+            <div class="text-white copyright d-flex justify-content-center">
+                <div>Designed by</div>
+                <p class="text-success">&nbsp;Bootstrapmade</p>
+            </div>
+        </div>
+    </section>
+    <!-- about us footer section end-->
+</body>
+
+</html>

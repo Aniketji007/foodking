@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font icon/css/all.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="py-3"></nav>   
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex fw-bold fs-3 order-1">
+          <img src="image/food king.png" alt="" class="navlogo me-3">FOOD KING
+        </a>
+    
+        <button class="btn d-block d-lg-none order-3" role="button" data-bs-toggle="offcanvas" data-bs-target="#mynav" aria-controls="mynav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end order-lg-2 w-50" id="mynav">
+          <button class="btn-close text-reset d-block d-lg-none ms-auto p-2" data-bs-dismiss="offcanvas"></button>
+          <ul class="navbar-nav mx-lg-auto px-3">
+            <li class="nav-item px-lg-2">
+              <a href="index.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">HOME</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="menu.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">MENU</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="#SERVICES" class="nav-link hrline hrline-lg text-danger"><div class="lghover">SERVICES</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="blogs.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">BLOGS</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="contacts.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">CONTACT US</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="about.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">ABOUT</div></a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-success rounded-pill order-2 order-lg-3" data-bs-toggle="modal" data-bs-target="#signinbox">Sign in</button>
+      </div>
+    </nav>
+    <nav class="py-3"></nav>
+    <!-- navbar end -->
+
+    <!-- modal sign in box start -->
+    <div class="modal fade bg-white bg-opacity-75" id="signinbox" data-bs-backdrop="static" tabindex="-1" aria-labelledby="singinboxmodal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row row-gutter">
+              <div class="col-5 d-none d-lg-block signinback">
+                <div class="d-flex h-100">
+                  <div class="my-auto">
+                    <h3 class="text-white text-center fplay">Hello, Friend!</h3>
+                    <h5 class="px-3 text-center text-white my-4 fbad">Enter your personal details and start journey with us</h5>
+                    <div class="text-center">
+                      <button class="btn btn-outline-light rounded-pill" data-bs-target="#singupboxmoda" data-bs-toggle="modal">SIGN UP</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-7 my-3">
+                <div class="d-flex mb-4 mt-2 px-sm-5 px-4">
+                  <div class="me-auto fs-3 fw-bold fplay">Food King</div>
+                  <div class="d-flex">
+                    <button class="btn-close border-success my-auto" data-bs-dismiss="modal"></button>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h2 class="mx-auto text-success fw-bold text-center px-4 flora">SIGN IN TO FOOD KING</h2>
+                </div>
+                <div class="d-flex">
+                  <div class="d-flex mx-auto my-4">
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-facebook-f text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center mx-2"><i class="fab fa-google-plus-g text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-linkedin-in text-danger"></i></div> 
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h5 class="mx-auto mb-3 px-4 text-center flora">or use your email account</h5>
+                </div>
+                <div class="">
+                  <form action="" class="px-sm-5 px-4 mb-4">
+                    <input type="email" name="" id="" maxlength="20" class="form-control" placeholder="Email" required>
+                    <input type="password" name="" id="" class="form-control mb-3 mt-3" minlength="8" placeholder="password" required>
+                    <div class="btn btn-light me-auto text-primary mb-3">Forgot your password?</div>
+                    <div class="d-flex">
+                      <button class="btn btn-primary mx-lg-auto me-auto" type="submit">SIGN IN</button>
+                      <button class="btn btn-outline-danger rounded-pill d-block d-lg-none" data-bs-target="#singupboxmoda" data-bs-toggle="modal">SIGN UP</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal sign in box end -->
+    <!-- modal sign up box start -->
+    <div class="modal fade bg-white bg-opacity-75" id="singupboxmoda" data-bs-backdrop="static" tabindex="-1" aria-labelledby="singupboxmoda" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row">
+              <div class="col-lg-7 col-12 my-3">
+                <div class="d-flex mb-4 mt-2 px-sm-5 px-4">
+                  <div class="me-auto fs-3 fw-bold fplay">Food King</div>
+                  <div class="d-flex">
+                    <button class="btn-close border-success my-auto" data-bs-dismiss="modal"></button>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h2 class="mx-auto text-success fw-bold flora">CREATE ACCOUNT</h2>
+                </div>
+                <div class="d-flex">
+                  <div class="d-flex mx-auto my-4">
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-facebook-f text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center mx-2"><i class="fab fa-google-plus-g text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-linkedin-in text-danger"></i></div> 
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h5 class="mx-auto mb-3 px-sm-5 px-4 flora">or use your email account</h5>
+                </div>
+                <div class="">
+                  <form action="" class="mb-4 px-sm-5 px-4">
+                    <input type="text" name="" id="" maxlength="20" class="form-control mb-3" placeholder="Name" required>
+                    <input type="email" name="" id="" maxlength="40" class="form-control" placeholder="Email" required>
+                    <input type="password" name="" id="" class="form-control mb-3 mt-3" minlength="8" placeholder="password" required>
+                    <div class="d-flex">
+                      <button class="btn btn-primary mx-lg-auto me-auto" type="submit">SIGN UP</button>
+                      <button class="btn btn-outline-danger rounded-pill d-block d-lg-none" data-bs-target="#signinbox" data-bs-toggle="modal">SIGN IN</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-5 d-none d-lg-block signinback">
+                <div class="d-flex h-100">
+                  <div class="my-auto">
+                    <h3 class="text-center text-white fplay">Welcome Back!</h3>
+                    <h5 class="px-3 text-center text-white my-4 fbad">To keep connected with us please login with your personal info</h5>
+                    <div class="text-center">
+                      <button class="btn btn-outline-light rounded-pill" data-bs-target="#signinbox" data-bs-toggle="modal">SIGN IN</button>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal sign up box end -->
+
+    <!-- home section start -->
+    <section id="contacthomesec">
+      <div class="h-100 d-flex flex-column justify-content-center py-sm-3 py-md-3 py-xl-4 contacthomeback">
+        <div class="py-xl-3 py-xxl-5 my-5 text-center">
+          <div class="text-center py-xxl-3">
+            <h1 class="fw-bold text-white foswald">Contact Us</h1>
+            <h4 class="fw-bold text-white w-75 mx-auto mt-0 f-s-sm-5 py-3 fbad">GOT A QUESTION? WE'LL GIVE YOU STRAIGHT ANSWER</h4>
+          </div>
+      </div>
+    </section>
+    <!-- home section end -->
+  
+    <!-- body section start -->
+    <section class="mb-5 px-3 px-sm-0">
+      <div class="container p-2 p-sm-4 p-md-5 border bg-white aboutbodydiv rounded-3">
+        <div class="row mb-3 justify-content-center justify-content-lg-between mb-5 mt-5 mt-sm-3">
+          <div class="col-12 col-md-6 col-lg-3 text-center">
+            <i class="fas fa-mobile-alt fs-2 text-danger"></i>
+            <h4 class="text-danger my-3">PHONES:</h4>
+            <h6>
+              Call: +91 8652345678<br>
+              Monday-Friday (7am to 6pm)
+            </h6>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-3 mt-sm-0">
+            <i class="far fa-envelope fs-2 text-danger"></i>
+            <h4 class="text-danger my-3">EMAIL:</h4>
+            <h6>
+              Email: foodking@gmail.com<br>
+              Web: www.foodking.com
+            </h6>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center">
+            <i class="fas fa-map-marker-alt fs-2 text-danger mt-3 mt-lg-0"></i>
+            <h4 class="text-danger my-3">ADDRESS:</h4>
+            <h6>
+              Location: B-25 Harkesh nagar okhla<br>
+              phase-2 New Delhi-110020
+            </h6>
+          </div>
+        </div>
+        <div class="">
+          <div class="contactsform">
+            <div class="contacttop-mask contactssmallscreen">
+              <div class="py-5 d-block d-lg-none">
+                <div class="py-5 my-sm-5"></div>
+              </div>
+            </div>
+            <div class="contactbottom-mask d-none d-lg-block"></div>
+            <div class="contactcontent contactscontentsmall">
+              <div class="contactcontent-wrapper">
+                <div class="row text-center row-gutter">
+                  <h4 class="text-danger my-0 fplay">Get In Touch</h4>
+                  <h6 class="my-4 flora">WHATEVER TYPES OF QUESTIONS YOU’LL HAVE, FEEL FREE TO GET IN TOUCH WITH US AND ADDRESS THEM!</h6>
+                    <form action="">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                        <label for="floatingInput" class="text-danger">Name</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingeemail" placeholder="Password" required>
+                        <label for="floatingeemail" class="text-danger">Email</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingphone" placeholder="Password" required>
+                        <label for="floatingphone" class="text-danger">Phone</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control textareahight" id="floatingmessage" placeholder="Password" cols="1" rows="5" required></textarea>
+                        <label for="floatingmessage" class="text-danger">Message</label>
+                      </div>
+                      <input type="submit" value="Submit" class="btn btn-danger rounded-pill px-4">
+                    </form>
+                </div>
+              <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- body section end -->
+        
+    <!-- about us footer section start-->
+    <section class="bg-dark pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8 col-sm-7 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Food King</h6>
+            <h6 class="text-white fw-light mb-4">
+              Location: B-25 Harkesh nagar okhla<br>
+              phase-2 New Delhi-110020
+            </h6>
+            <h6 class="text-white fw-light mb-4">
+              Phone no: +91 8652345678<br>
+              Email: foodking@gmail.com
+            </h6>
+            <h5 class="text-white footsocial d-flex mb-3 pt-1">
+              <div class="d-flex mx-auto mx-sm-0">
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-twitter m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-facebook-f m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-instagram m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-skype m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-linkedin-in m-auto"></i></a>
+              </div>
+            </h5>
+          </div>
+          <div class="col-8 col-sm-5 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Useful Links</h6>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Home</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>About Us</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Services</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Terms of Services</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Privacy policy</a>
+          </div>
+          <div class="col-8 col-sm-5 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Our Services</h6>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>personal Event</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Private Dining</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Business Catering</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Party Consulting</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Diet Menu</a>
+          </div>
+          <div class="col-8 col-sm-7 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Our Newsletter</h6>
+            <div></div>
+            <div>
+              <form action="" class="row">
+                <input type="text" name="" id="" class="form-conrol rounded-0 mb-3 mx-auto mx-sm-0 w-75">
+                <button type="text" name="" id="" class="form-control btn-success rounded-0 w-50 mb-3 mx-auto mx-sm-0">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-3 mt-4 text-center copyrightbackground">
+        <div class="text-white copyright fw-bold">&copy; Copyright Foodking. All Rights Reserved</div>
+        <div class="text-white copyright d-flex justify-content-center">
+          <div>Designed by</div>
+          <p class="text-success">&nbsp;Bootstrapmade</p>
+        </div>
+      </div>
+    </section>
+    <!-- about us footer section end-->
+  </body>
+</html>

@@ -1,0 +1,1502 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+.fnova {
+    font-family: 'Nova Mono', monospace;
+}
+
+.fplay {
+    font-family: 'Playball', cursive;
+}
+
+.flora {
+    font-family: 'Lora', serif;
+}
+
+.fMontserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.foswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.fbad {
+    font-family: 'Bad Script', cursive;
+}
+
+.background {
+    background: url(image/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.signinback {
+    background: url(image/TIQo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgcolor-lg {
+    background-color: #dddddd;
+}
+
+.row-gutter {
+    --bs-gutter-x: 0 !important;
+}
+
+.padding {
+    padding-right: var(--bs-gutter-x, 0) !important;
+    padding-left: var(--bs-gutter-x, 0) !important;
+}
+
+.navlogo {
+    height: 37px !important;
+}
+
+a.hrline-lg div {
+    height: 20px;
+    transition: all .3s ease-in-out;
+    font-family: 'Nova Mono', monospace;
+    font-weight: 600;
+}
+
+a.hrline-lg:hover div {
+    color: black;
+}
+
+a.hrline div {
+    height: 20px;
+    transition: all .2s ease-in-out;
+}
+
+a.hrline-lg {
+    position: relative;
+    overflow: hidden;
+}
+
+a.hrline-lg div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #000;
+    transform: scale(0);
+    transition: all .4s ease-in-out;
+}
+
+a.hrline-lg:hover div::before {
+    transform: scale(1);
+}
+
+a.hrline-lg div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #000;
+    transform: scale(0);
+    transition: all .4s ease-in-out;
+}
+
+a.hrline-lg:hover div::after {
+    transform: scale(1);
+}
+
+.modicon {
+    width: 30px;
+    height: 30px;
+}
+
+.menuboxshadow {
+    transition: all .4s ease-in-out;
+    background-color: #d5d5d5;
+    border-radius: .5rem;
+}
+
+.menuboxshadow:hover {
+    box-shadow: 0.4rem 0.4rem 0.7rem #484848;
+    background-color: #d5d5d5;
+    border-radius: .5rem;
+}
+
+.crdhover {
+    background-color: #e5e5e5 !important;
+    transition: all .4s ease-in-out;
+}
+
+.crdhover:hover {
+    box-shadow: 0.3rem 0.3rem 0.7rem #484848;
+    transition: all .4s ease-in-out;
+}
+
+.buttonshadow {
+    transition: all .4s ease-in-out !important;
+}
+
+.buttonshadow:hover {
+    box-shadow: 0 0 5px #dc3545, 0 0 15px #dc3545, 0 0 20px #dc3545;
+}
+
+.cadpadding {
+    padding: .4rem 1rem !important;
+}
+
+.parapadding {
+    margin-bottom: .5rem !important;
+}
+
+.contpadding {
+    padding-right: 0 !important;
+}
+
+.servibg {
+    background: #000000c7;
+    --bs-bg-opacity: 0.75 !important;
+}
+
+.crsewidth {
+    width: auto !important;
+}
+
+.crsewidthsm {
+    width: 10% !important;
+}
+
+.blogsshadow {
+    transition: all 1s ease-in-out;
+    border-radius: .5rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e1e0e0;
+}
+
+.blogsshadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ededed;
+    width: 50%;
+    height: 100%;
+    transition: all .9s ease-in-out;
+}
+
+.blogsshadow:hover:before {
+    width: 1px;
+    height: 100%;
+}
+
+.blogsshadow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ededed;
+    width: 50%;
+    height: 100%;
+    transition: all .9s ease-in-out;
+}
+
+.blogsshadow:hover::after {
+    width: 1px;
+    height: 100%;
+}
+
+.blogsshadow:hover {
+    box-shadow: 0.4rem 0.4rem 0.7rem #484848;
+    background-color: #ededed;
+    border-radius: .5rem;
+    transition: all .9s ease-in-out;
+}
+
+.blogimage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease-in-out;
+    z-index: 1;
+}
+
+.blogsshadow:hover .blogimage {
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.contactmap {
+    position: relative;
+}
+
+.contactmap::before {
+    content: '';
+    position: absolute;
+    top: -13px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 4px solid red;
+    /* border-right: 4px solid red; */
+    transition: all .9s ease-in-out;
+    opacity: .4;
+    z-index: -1;
+}
+
+.contactmap:hover:before {
+    width: 100%;
+    /* height: 100%; */
+    opacity: 1;
+}
+
+.contactmap::after {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 0%;
+    height: 0;
+    border-bottom: 4px solid red;
+    /* border-left: 4px solid red; */
+    transition: all .9s ease-in-out;
+    opacity: .4;
+    z-index: -1;
+}
+
+.contactmap:hover:after {
+    width: 100%;
+    /* height: 100%; */
+    opacity: 1;
+}
+
+.contactform {
+    position: relative;
+}
+
+.contactform::before {
+    content: '';
+    position: absolute;
+    top: -13px;
+    left: 0;
+    width: 0%;
+    height: 0;
+    border-top: 4px solid red;
+    /* border-left: 4px solid red; */
+    transition: all .9s ease-in-out;
+    opacity: .4;
+    z-index: -1;
+}
+
+.contactform:hover:before {
+    width: 100%;
+    /* height: 100%; */
+    opacity: 1;
+}
+
+.contactform::after {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    right: 0;
+    width: 0%;
+    height: 0;
+    border-bottom: 4px solid red;
+    /* border-right: 4px solid red; */
+    transition: all .9s ease-in-out;
+    opacity: .4;
+    z-index: -1;
+}
+
+.contactform:hover:after {
+    width: 100%;
+    /* height: 100%; */
+    opacity: 1;
+}
+
+.footsocialicon {
+    width: 35px;
+    height: 35px;
+    background-color: #2b3036;
+    transition: all .5s ease-in-out;
+}
+
+.footsocialicon:hover {
+    color: red !important;
+}
+
+.fotterlinkicon {
+    font-size: 13px;
+    color: red;
+}
+
+.copyrightbackground {
+    background: black !important;
+}
+
+.copyright {
+    font-size: 15px !important;
+}
+
+
+/* blog page css start */
+
+#bloghomesec {
+    background: url(image/blhomebackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 35vh;
+}
+
+.bloghomeback {
+    background: #00000091;
+}
+
+.blogdivshadow {
+    transition: all .8s ease-in-out;
+}
+
+.blogdivshadow:hover {
+    box-shadow: 0 0 0.9rem #484848;
+}
+
+.blogtext {
+    transition: all .5s ease-in-out;
+    font-family: 'Playball', cursive;
+}
+
+.blogtext:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.blogrecenttext {
+    color: #6c757d;
+    transition: all .5s ease-in-out;
+    font-family: 'Playball', cursive;
+}
+
+.blogrecenttext:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.blogbutton {
+    transition: all .5s ease-in-out;
+}
+
+.blogbutton:hover {
+    background: green;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 2rem;
+    height: 60vh;
+    z-index: 2;
+    background: #e4e4e4;
+    transition: none;
+}
+
+.blogchatimage {
+    position: fixed;
+    bottom: 53px;
+    right: 53px;
+    width: 60px;
+    height: 60px;
+}
+
+.blogchatimage img {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* blog page css end */
+
+
+/* menu page css start */
+
+.transicarousel {
+    transition: all 0ms ease-in-out;
+}
+
+#menubackground {
+    background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.185)), url(image/menupage1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuzoomhover {
+    transition: all .9s ease-in-out;
+}
+
+.menuzoomhover:hover {
+    transform: scale(1.4) rotate(15deg);
+}
+
+
+/* menu page css end */
+
+
+/* about page css start */
+
+.abouthomeback {
+    background: #00000087;
+}
+
+#abouthomesec {
+    background: url(image/about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#contacthomesec {
+    background: url(image/contacthomesection.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.contacthomeback {
+    background: #000000a6;
+}
+
+.aboutdivshadow {
+    background: #f5f5f5;
+    border: 2px solid #cbc7c7;
+    transition: all .5s ease-in-out;
+}
+
+.aboutdivshadow:hover {
+    box-shadow: 0 0 1.5rem #ababab;
+}
+
+
+/* about page css end */
+
+
+/* contact page css start */
+
+.textareahight {
+    height: 150px !important;
+}
+
+
+/* contact page css end */
+
+
+/* ...............................media query below 767px........................................ */
+
+@media screen and (max-width: 767px) {
+    .f-s-sm-1 {
+        font-size: 2.5rem!important;
+    }
+    .f-s-sm-2 {
+        font-size: 2rem!important;
+    }
+    .f-s-sm-3 {
+        font-size: 1.75rem!important;
+    }
+    .f-s-sm-5 {
+        font-size: 1.25rem!important;
+    }
+    .f-s-sm-4 {
+        font-size: 1.5rem!important;
+    }
+    a.hrline {
+        position: relative;
+        overflow: hidden;
+        width: 125px;
+    }
+    a.hrline:hover {
+        background-color: #efefef;
+    }
+    a.hrline div::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 2px solid #000;
+        transform: scale(0);
+        transition: all .4s ease-in-out;
+    }
+    a.hrline:hover div::before {
+        transform: scale(1);
+    }
+    a.hrline div::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-top: 2px solid #000;
+        transform: scale(0);
+        transition: all .4s ease-in-out;
+    }
+    a.hrline:hover div::after {
+        transform: scale(1);
+    }
+    .div-shadow {
+        border-radius: 6px;
+        padding: .6rem !important;
+        background-color: #e9e9e9;
+        transition: all .4s ease-in-out;
+    }
+    .div-shadow:hover {
+        box-shadow: 0.3rem 0.3rem 0.7rem #484848;
+    }
+    .bgcolor-sm {
+        background-color: transparent;
+    }
+    .menu-size-sm {
+        width: 19rem !important;
+        padding: 1rem 1rem 1rem 0;
+        margin: 0 1rem 0 1rem;
+    }
+    .blog-menu-size-sm {
+        width: 19rem !important;
+        padding: 1rem 0 1rem 0;
+        margin: 0;
+    }
+    .carouheight {
+        height: 25vh;
+    }
+    .aboutsmalldiv {
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    }
+    .ourstory .oursmallscreen {
+        background: url(image/aboutback2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .contentsmall {
+        margin-top: -60px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+        background: white;
+    }
+    .since .sincesmallscreen {
+        background: url(image/aboutback3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .sincecontentsmall {
+        margin-top: -90px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+        background: white;
+    }
+    .contactsform .contactssmallscreen {
+        background: url(image/aboutback3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .contactscontentsmall {
+        margin-top: -90px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        background: white;
+    }
+}
+
+
+/* ...............................media query below 400px........................................ */
+
+@media screen and (max-width: 370px) {
+    .workhour {
+        display: block !important;
+    }
+}
+
+
+/* ...............................media query 768px to 991px........................................ */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .f-s-md-1 {
+        font-size: 2.5rem!important;
+    }
+    .f-s-md-2 {
+        font-size: 2rem!important;
+    }
+    .f-s-md-3 {
+        font-size: 1.75rem!important;
+    }
+    .f-s-md-5 {
+        font-size: 1.25rem!important;
+    }
+    .f-s-md-4 {
+        font-size: 1.5rem!important;
+    }
+    a.hrline:hover {
+        background-color: #efefef;
+    }
+    a.hrline {
+        position: relative;
+        /* background-color: ; */
+        overflow: hidden;
+        width: 125px;
+    }
+    a.hrline div::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 2px solid #000;
+        transform: scale(0);
+        transition: all .4s ease-in-out;
+    }
+    a.hrline:hover div::before {
+        transform: scale(1);
+    }
+    a.hrline div::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-top: 2px solid #000;
+        transform: scale(0);
+        transition: all .4s ease-in-out;
+    }
+    a.hrline:hover div::after {
+        transform: scale(1);
+    }
+    .menu-size-md {
+        width: 18rem !important;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 0 1rem 0 1rem;
+    }
+    .aboutbodydiv {
+        margin-top: -50px !important;
+        box-shadow: .1rem .1rem .9rem #00000080;
+    }
+    .ourstory .oursmallscreen {
+        background: url(image/aboutback2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .contentsmall {
+        margin-top: -90px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+        background: white;
+    }
+    .since .sincesmallscreen {
+        background: url(image/aboutback3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .sincecontentsmall {
+        margin-top: -90px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+        background: white;
+    }
+    .contactsform .contactssmallscreen {
+        background: url(image/aboutback3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .contactscontentsmall {
+        margin-top: -90px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+        background: white;
+    }
+    .aboutincredients {
+        background: url(image/incredients.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutmenu {
+        background: url(image/menu.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutchefs {
+        background: url(image/chefs.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutcousin {
+        background: url(image/cousin.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutdelivery {
+        background: url(image/delivery.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
+
+/* ...............................media query 992px to 1199px........................................ */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .f-s-lg-1 {
+        font-size: 2.5rem!important;
+    }
+    .f-s-lg-2 {
+        font-size: 2rem!important;
+    }
+    .f-s-lg-3 {
+        font-size: 1.75rem!important;
+    }
+    .f-s-lg-4 {
+        font-size: 1.5rem!important;
+    }
+    .f-s-lg-5 {
+        font-size: 1.25rem!important;
+    }
+    .f-s-lg-6 {
+        font-size: 1rem!important;
+    }
+    .menu-size-lg {
+        width: 18rem !important;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 0 .5rem 0 .5rem;
+    }
+    .aboutbodydiv {
+        margin-top: -50px !important;
+        box-shadow: .1rem .1rem .9rem #00000080;
+    }
+    .ourstory {
+        position: relative;
+        background: url(image/aboutback2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .ourstory .top-mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: 50px;
+        background: white;
+    }
+    .ourstory .top-mask::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: calc(65% - 30px);
+        height: 35px;
+        margin: 15px 15px 0 0;
+        background: white;
+    }
+    .ourstory .bottom-mask::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 35%;
+        height: 50px;
+        background: white;
+    }
+    .ourstory .bottom-mask::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        width: calc(65% - 30px);
+        height: 35px;
+        margin: 0px 15px 15px 0;
+        background: white;
+    }
+    .content {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .content-wrapper {
+        width: 500px;
+        float: right;
+        background: white;
+        margin: 15px 15px 15px 0;
+        padding: 35px 35px 35px 35px;
+    }
+    .since {
+        position: relative;
+        background: url(image/aboutback1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .since .sincetop-mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35%;
+        height: 50px;
+        background: white;
+    }
+    .since .sincetop-mask::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: calc(65% - 30px);
+        height: 35px;
+        margin: 15px 0px 0 15px;
+        background: white;
+    }
+    .since .sincebottom-mask::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 35%;
+        height: 50px;
+        background: white;
+    }
+    .since .sincebottom-mask::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: calc(65% - 30px);
+        height: 35px;
+        margin: 0px 0px 15px 15px;
+        background: white;
+    }
+    .sincecontent {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .sincecontent-wrapper {
+        width: 500px;
+        background: white;
+        margin: 15px 0 15px 15px;
+        padding: 35px 35px 35px 35px;
+    }
+    .contactsform {
+        position: relative;
+        background: url(image/contactform2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .contactsform .contacttop-mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35%;
+        height: 50px;
+        background: white;
+    }
+    .contactsform .contacttop-mask::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: calc(65% - 30px);
+        height: 35px;
+        margin: 15px 0px 0 15px;
+        background: white;
+    }
+    .contactsform .contactbottom-mask::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 35%;
+        height: 50px;
+        background: white;
+    }
+    .contactsform .contactbottom-mask::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: calc(65% - 30px);
+        height: 35px;
+        margin: 0px 0px 15px 15px;
+        background: white;
+    }
+    .contactcontent {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .contactcontent-wrapper {
+        width: 500px;
+        background: white;
+        margin: 15px 0 15px 15px;
+        padding: 35px 35px 35px 35px;
+    }
+    .aboutincredients {
+        background: url(image/incredients.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutmenu {
+        background: url(image/menu.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutchefs {
+        background: url(image/chefs.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutcousin {
+        background: url(image/cousin.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutdelivery {
+        background: url(image/delivery.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
+
+/* ...............................media query 1200px to 1399px........................................ */
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .f-s-xl-1 {
+        font-size: 2.5rem!important;
+    }
+    .f-s-xl-2 {
+        font-size: 2rem!important;
+    }
+    .f-s-xl-3 {
+        font-size: 1.75rem!important;
+    }
+    .f-s-xl-4 {
+        font-size: 1.5rem!important;
+    }
+    .f-s-xl-5 {
+        font-size: 1.25rem!important;
+    }
+    .menu-size-xl {
+        width: 16rem !important;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 0 .5rem 0 .5rem;
+    }
+    .aboutbodydiv {
+        margin-top: -50px !important;
+        box-shadow: .1rem .1rem .9rem #00000080;
+    }
+    .ourstory {
+        position: relative;
+        background: url(image/aboutback2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .ourstory .top-mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .ourstory .top-mask::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 15px 15px 0 0;
+        background: white;
+    }
+    .ourstory .bottom-mask::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .ourstory .bottom-mask::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 0px 15px 15px 0;
+        background: white;
+    }
+    .content {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .content-wrapper {
+        width: 600px;
+        float: right;
+        background: white;
+        margin: 15px 15px 15px 0;
+        padding: 35px 35px 35px 35px;
+    }
+    .since {
+        position: relative;
+        background: url(image/aboutback1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .since .sincetop-mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .since .sincetop-mask::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 15px 0px 0 15px;
+        background: white;
+    }
+    .since .sincebottom-mask::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .since .sincebottom-mask::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 0px 0px 15px 15px;
+        background: white;
+    }
+    .sincecontent {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .sincecontent-wrapper {
+        width: 600px;
+        background: white;
+        margin: 15px 0 15px 15px;
+        padding: 35px 35px 35px 35px;
+    }
+    .aboutincredients {
+        background: url(image/incredients.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutmenu {
+        background: url(image/menu.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutchefs {
+        background: url(image/chefs.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutcousin {
+        background: url(image/cousin.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutdelivery {
+        background: url(image/delivery.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .contactsform {
+        position: relative;
+        background: url(image/contactform2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .contactsform .contacttop-mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .contactsform .contacttop-mask::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 15px 0 0 15px;
+        background: white;
+    }
+    .contactsform .contactbottom-mask::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .contactsform .contactbottom-mask::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 0px 0px 15px 15px;
+        background: white;
+    }
+    .contactcontent {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .contactcontent-wrapper {
+        width: 600px;
+        background: white;
+        margin: 15px 0px 15px 15px;
+        padding: 35px 35px 35px 35px;
+    }
+}
+
+
+/* ...............................media query above 1400px........................................ */
+
+@media screen and (min-width: 1400px) {
+    .f-s-xxl-1 {
+        font-size: 2.5rem!important;
+    }
+    .f-s-xxl-2 {
+        font-size: 2rem!important;
+    }
+    .f-s-xxl-3 {
+        font-size: 1.75rem!important;
+    }
+    .f-s-xxl-4 {
+        font-size: 1.5rem!important;
+    }
+    .f-s-xxl-5 {
+        font-size: 1.25rem!important;
+    }
+    .menu-size-xxl {
+        width: 18rem !important;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 0 1rem 0 1rem;
+    }
+    .aboutbodydiv {
+        margin-top: -50px !important;
+        box-shadow: .1rem .1rem .9rem #00000080;
+    }
+    .ourstory {
+        position: relative;
+        background: url(image/aboutback2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .ourstory .top-mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 50px;
+        background: white;
+    }
+    .ourstory .top-mask::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: calc(60% - 30px);
+        height: 35px;
+        margin: 15px 15px 0 0;
+        background: white;
+    }
+    .ourstory .bottom-mask::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40%;
+        height: 50px;
+        background: white;
+    }
+    .ourstory .bottom-mask::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        width: calc(60% - 30px);
+        height: 35px;
+        margin: 0px 15px 15px 0;
+        background: white;
+    }
+    .content {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .content-wrapper {
+        width: 600px;
+        float: right;
+        background: white;
+        margin: 15px 15px 15px 0;
+        padding: 35px 35px 35px 35px;
+    }
+    .since {
+        position: relative;
+        background: url(image/aboutback1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .since .sincetop-mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .since .sincetop-mask::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 15px 0 0 15px;
+        background: white;
+    }
+    .since .sincebottom-mask::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .since .sincebottom-mask::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 0px 0px 15px 15px;
+        background: white;
+    }
+    .sincecontent {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .sincecontent-wrapper {
+        width: 600px;
+        background: white;
+        margin: 15px 0px 15px 15px;
+        padding: 35px 35px 35px 35px;
+    }
+    .aboutincredients {
+        background: url(image/incredients.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutmenu {
+        background: url(image/menu.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutchefs {
+        background: url(image/chefs.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutcousin {
+        background: url(image/cousin.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .aboutdelivery {
+        background: url(image/delivery.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .contactsform {
+        position: relative;
+        background: url(image/contactform2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .contactsform .contacttop-mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .contactsform .contacttop-mask::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 15px 0 0 15px;
+        background: white;
+    }
+    .contactsform .contactbottom-mask::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: 50px;
+        background: white;
+    }
+    .contactsform .contactbottom-mask::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: calc(70% - 30px);
+        height: 35px;
+        margin: 0px 0px 15px 15px;
+        background: white;
+    }
+    .contactcontent {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+    .contactcontent-wrapper {
+        width: 600px;
+        background: white;
+        margin: 15px 0px 15px 15px;
+        padding: 35px 35px 35px 35px;
+    }
+}
