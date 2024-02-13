@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font icon/css/all.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="py-3"></nav>   
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex fw-bold fs-3 order-1">
+          <img src="image/food king.png" alt="" class="navlogo me-3">FOOD KING
+        </a>
+    
+        <button class="btn d-block d-lg-none order-3" role="button" data-bs-toggle="offcanvas" data-bs-target="#mynav" aria-controls="mynav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-end order-lg-2 w-50" id="mynav">
+          <button class="btn-close text-reset d-block d-lg-none ms-auto p-2" data-bs-dismiss="offcanvas"></button>
+          <ul class="navbar-nav mx-lg-auto px-3">
+            <li class="nav-item px-lg-2">
+              <a href="index.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">HOME</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="menu.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">MENU</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="#SERVICES" class="nav-link hrline hrline-lg text-danger"><div class="lghover">SERVICES</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="blogs.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">BLOGS</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="contacts.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">CONTACT US</div></a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a href="about.html" class="nav-link hrline hrline-lg text-danger"><div class="lghover">ABOUT</div></a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-success rounded-pill order-2 order-lg-3" data-bs-toggle="modal" data-bs-target="#signinbox">Sign in</button>
+      </div>
+    </nav>
+    <nav class="py-3"></nav>
+    <!-- navbar end -->
+
+    <!-- modal sign in box start -->
+    <div class="modal fade bg-white bg-opacity-75" id="signinbox" data-bs-backdrop="static" tabindex="-1" aria-labelledby="singinboxmodal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row row-gutter">
+              <div class="col-5 d-none d-lg-block signinback">
+                <div class="d-flex h-100">
+                  <div class="my-auto">
+                    <h3 class="text-white text-center fplay">Hello, Friend!</h3>
+                    <h5 class="px-3 text-center text-white my-4 fbad">Enter your personal details and start journey with us</h5>
+                    <div class="text-center">
+                      <button class="btn btn-outline-light rounded-pill" data-bs-target="#singupboxmoda" data-bs-toggle="modal">SIGN UP</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-7 my-3">
+                <div class="d-flex mb-4 mt-2 px-sm-5 px-4">
+                  <div class="me-auto fs-3 fw-bold fplay">Food King</div>
+                  <div class="d-flex">
+                    <button class="btn-close border-success my-auto" data-bs-dismiss="modal"></button>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h2 class="mx-auto text-success fw-bold text-center px-4 flora">SIGN IN TO FOOD KING</h2>
+                </div>
+                <div class="d-flex">
+                  <div class="d-flex mx-auto my-4">
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-facebook-f text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center mx-2"><i class="fab fa-google-plus-g text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-linkedin-in text-danger"></i></div> 
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h5 class="mx-auto mb-3 px-4 text-center flora">or use your email account</h5>
+                </div>
+                <div class="">
+                  <form action="" class="px-sm-5 px-4 mb-4">
+                    <input type="email" name="" id="" maxlength="20" class="form-control" placeholder="Email" required>
+                    <input type="password" name="" id="" class="form-control mb-3 mt-3" minlength="8" placeholder="password" required>
+                    <div class="btn btn-light me-auto text-primary mb-3">Forgot your password?</div>
+                    <div class="d-flex">
+                      <button class="btn btn-primary mx-lg-auto me-auto" type="submit">SIGN IN</button>
+                      <button class="btn btn-outline-danger rounded-pill d-block d-lg-none" data-bs-target="#singupboxmoda" data-bs-toggle="modal">SIGN UP</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal sign in box end -->
+    <!-- modal sign up box start -->
+    <div class="modal fade bg-white bg-opacity-75" id="singupboxmoda" data-bs-backdrop="static" tabindex="-1" aria-labelledby="singupboxmoda" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row">
+              <div class="col-lg-7 col-12 my-3">
+                <div class="d-flex mb-4 mt-2 px-sm-5 px-4">
+                  <div class="me-auto fs-3 fw-bold fplay">Food King</div>
+                  <div class="d-flex">
+                    <button class="btn-close border-success my-auto" data-bs-dismiss="modal"></button>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h2 class="mx-auto text-success fw-bold flora">CREATE ACCOUNT</h2>
+                </div>
+                <div class="d-flex">
+                  <div class="d-flex mx-auto my-4">
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-facebook-f text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center mx-2"><i class="fab fa-google-plus-g text-danger"></i></div>                  
+                    <div class="border rounded-circle modicon text-center"><i class="fab fa-linkedin-in text-danger"></i></div> 
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <h5 class="mx-auto mb-3 px-sm-5 px-4 flora">or use your email account</h5>
+                </div>
+                <div class="">
+                  <form action="" class="mb-4 px-sm-5 px-4">
+                    <input type="text" name="" id="" maxlength="20" class="form-control mb-3" placeholder="Name" required>
+                    <input type="email" name="" id="" maxlength="40" class="form-control" placeholder="Email" required>
+                    <input type="password" name="" id="" class="form-control mb-3 mt-3" minlength="8" placeholder="password" required>
+                    <div class="d-flex">
+                      <button class="btn btn-primary mx-lg-auto me-auto" type="submit">SIGN UP</button>
+                      <button class="btn btn-outline-danger rounded-pill d-block d-lg-none" data-bs-target="#signinbox" data-bs-toggle="modal">SIGN IN</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-5 d-none d-lg-block signinback">
+                <div class="d-flex h-100">
+                  <div class="my-auto">
+                    <h3 class="text-center text-white fplay">Welcome Back!</h3>
+                    <h5 class="px-3 text-center text-white my-4 fbad">To keep connected with us please login with your personal info</h5>
+                    <div class="text-center">
+                      <button class="btn btn-outline-light rounded-pill" data-bs-target="#signinbox" data-bs-toggle="modal">SIGN IN</button>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal sign up box end -->
+
+    <!-- home section start -->
+    <section id="abouthomesec">
+      <div class="h-100 d-flex flex-column justify-content-center py-sm-3 py-md-3 py-xl-4 abouthomeback">
+        <div class="py-xl-3 py-xxl-5 my-5 text-center">
+          <div class="text-center py-xxl-3">
+            <h1 class="fw-bold text-white foswald">About Us</h1>
+            <h4 class="fw-bold text-white w-75 mx-auto mt-0 f-s-sm-5 py-4 fbad">FURTHER INFORMATION ABOUT OUR TEAM AND OUR RESTAURANT</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- body section start -->
+    <section class="px-2 px-sm-0">
+      <div class="container p-3 p-sm-4 p-md-5 bg-white aboutbodydiv rounded-3">
+        <div class="mb-5 py-2 aboutsmalldiv">
+          <div class="fs-1 text-center fw-bold flora">Growth</div>
+          <hr size="5" width="100px" class="mx-auto bg-danger opacity-100 mb-3 mt-0">
+          <div class="fs-6 fbad p-3 p-sm-0">As funding started picking up the pace in 2010, foodking presence across India did too. By 2011 the company after 
+            establishing a monopoly in Delhi NCR moved to cities like Pune, Bangalore, Chennai, Hyderabad, and Ahmadabad. It kept pace with the 
+            smartphone boom too, by introducing its mobile app at this point in time. The company in order to keep up with its hip brand image 
+            and humor its audiences launched a .xxx domain which had pictures strictly dedicated to food porn. By 2012, overseas operations of 
+            foodking started operating in full gear with the UAE, Sri Lanka, Qatar, United Kingdom, Philippines, and South Africa becoming a part 
+            of its user base. In 2013, countries like Turkey, Brazil, and New Zealand were also added to the list. While its expansion was 
+            happening in full force, foodking also started acquiring foreign-based companies to maximize its business. In 2013 it acquired 
+            Portuguese company Gastronauci and the Italian service Cibando. A big acquisition came in when they got a hold of the  American 
+            service called NexTable which catapulted foodking into the US market’s competition.
+          </div>
+        </div>
+        <div class="">
+          <div class="ourstory aboutsmalldiv">
+            <div class="top-mask oursmallscreen">
+              <div class="py-5 d-block d-lg-none">
+                <div class="py-5 my-sm-5"></div>
+              </div>
+            </div>
+            <div class="bottom-mask d-none d-lg-block"></div>
+            <div class="content contentsmall">
+              <div class="content-wrapper">
+                <div class="fs-2 text-center text-danger flora">Our Story</div>
+                <div class="fs-6 fbad">Foodking India’s most used food directory was originally launched under the name ‘Foodiebay’ in 2008 at the peak of the Indian 
+                  start-up boom. The founders were Deepinder Goyal and Pankaj Chaddah. Both are IIT Delhi graduates from 2005 and 2007 respectively 
+                  and were working as analysts for the consulting firm Bain & Company.<br><br>
+                  The idea for FoodieBay sprang from them when after having to scrounge around for restaurant menus they finally decided to take 
+                  matters into their own control.  It started with a simple foundational idea- an internet directory for restaurant menus.<br><br>
+                  The idea, even before FoodieBay, was being pursued by Deepinder with another friend Prasoon Jain in Delhi NCR as a venture called 
+                  Foodlet. However, Prasoon soon moved to Mumbai and left behind Foodlet as a venture too.<br><br>
+                  Soon there was a severe lack of HR and business, which kept Foodlet struggling. This is when Pankaj Chaddah stepped in to help 
+                  Deepinder’s idea, and they began afresh by starting FoodieBay.  The graph, since then, started bolting only upwards for the company.<br><br>
+                  Deepinder describes Pankaj as a “turning point for the company”. The team of FoodieBay was just 6  in number but in a short span of 9 months, 
+                  they became the biggest restaurant directory in the Delhi NCR region by late 2008. The service, after two years of operations, was renamed as foodking in 2010. 
+                </div>
+                </div>
+              <div>
+            </div>
+          </div>
+        </div>
+        <hr size="3" color="gray" class="my-5">
+        <div class="">
+          <div class="since aboutsmalldiv">
+            <div class="sincetop-mask sincesmallscreen">
+              <div class="py-5 d-block d-lg-none">
+                <div class="py-5 my-sm-5"></div>
+              </div>
+            </div>
+            <div class="sincebottom-mask d-none d-lg-block"></div>
+            <div class="sincecontent sincecontentsmall">
+              <div class="sincecontent-wrapper">
+                <div class="fs-2 text-center text-danger flora">Since 1987</div>
+                <div class="fs-6 fbad">2015 came in with the need of Zomato laying off 300 employees in order to curb losses, and 10% of these layoffs came to 
+                  be in the US.  Another setback in the States happened when Zomato aquired Urbanspoon and rebranded the company as their own. This rebranding did not workout and 
+                  the venture failed in a mammoth manner.<br><br>
+                  2016 was probably the slowest financial year for the company, and as a result, it had to rollback its operations in 9 countries which included the US, UK, Chile, 
+                  Canada, Brazil, Sri Lanka, Ireland, Italy, and Slovakia. To resume presence they had to go ahead with a remote management service.<br><br>
+                  In May 2017, Zomato faced it’s biggest cyber attack with a hacker breaching into 17 million user records. While the concern was overpayment and card details being 
+                  accessed, the company claimed that only the names, user ID’s, email addresses, usernames, and password hashes had been disclosed. The breach was resolved after 
+                  communicating with the hacker who apparently just wanted to prove the security loopholes in the system.<br><br>
+                  Lastly, Zomato again had bad PR built up for it when it was just about to reach an evaluation of a billion and HSBC Capital slashed this evaluation down by 50% 
+                  (making it USD 550 million) thereby raising the company’s alleged losses. 
+                </div>
+                </div>
+              <div>
+            </div>
+          </div>
+        </div>
+        <hr size="3" color="gray" class="my-5">               
+        <div class="">
+          <div class="fs-3 fw-bold text-danger flora">Our Working Hours</div>
+          <div class="fs-6">
+            Online food delivery platform Swiggy on Thursday has initiated a two-day paid monthly period time-off policy for all its female delivery partners. 
+            Upon opting for this time-off, the female delivery partners will receive a minimum earnings guarantee.Also Read - Swiggy Plans To Enter Community 
+            Buying Through Swiggy Bazaar | Details HereWith a new slew of chances, the giant food company has opted for several other initiatives for female 
+            delivery partners. Some of the initiatives include access to vehicles, access to hygienic restrooms, and also implementation of safety measures 
+            for the delivery agents. Also Read - Udaipur Mall Bans Swiggy & Zomato Delivery Guys From Using Lift, Enraged Twitter Calls it 'Blatant Discrimination'<br><br>
+          </div>
+        </div>
+        <div>
+          <div class="row justify-content-center justify-content-sm-between justify-content-xl-start">
+            <div class="col-12 justify-content-evenly col-sm-6 col-lg-4 col-xl-3 d-flex mb-3 workhour">
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-danger rounded-pill px-2 mb-1 mb-sm-0">Monday</div>
+              </div>
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-secondary rounded-pill px-2"><i class="far fa-clock"></i> 8AM TO 12PM</div>
+              </div>
+            </div>
+            <div class="col-12 justify-content-evenly col-sm-6 col-lg-4 col-xl-3 d-flex mb-3 workhour">
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-danger rounded-pill px-2 mb-1 mb-sm-0">Tuesday</div>
+              </div>
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-secondary rounded-pill px-2"><i class="far fa-clock"></i> 8AM TO 12PM</div>
+              </div>
+            </div>
+            <div class="col-12 justify-content-evenly col-sm-6 col-lg-4 col-xl-3 d-flex mb-3 workhour">
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-danger rounded-pill px-2 mb-1 mb-sm-0">Wednesday</div>
+              </div>
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-secondary rounded-pill px-2"><i class="far fa-clock"></i> 8AM TO 12PM</div>
+              </div>
+            </div>
+            <div class="col-12 justify-content-evenly col-sm-6 col-lg-4 col-xl-3 d-flex mb-3 workhour">
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-danger rounded-pill px-2 mb-1 mb-sm-0">Thursday</div>
+              </div>
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-secondary rounded-pill px-2"><i class="far fa-clock"></i> 8AM TO 12PM</div>
+              </div>
+            </div>
+            <div class="col-12 justify-content-evenly col-sm-6 col-lg-4 col-xl-3 d-flex mb-3 workhour">
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-danger rounded-pill px-2 mb-1 mb-sm-0">Friday</div>
+              </div>
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-secondary rounded-pill px-2"><i class="far fa-clock"></i> 8AM TO 12PM</div>
+              </div>
+            </div>
+            <div class="col-12 justify-content-evenly col-sm-6 col-lg-4 col-xl-3 d-flex mb-3 workhour">
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-danger rounded-pill px-2 mb-1 mb-sm-0">Saturday</div>
+              </div>
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-secondary rounded-pill px-2"><i class="far fa-clock"></i> 8AM TO 12PM</div>
+              </div>
+            </div>
+            <div class="col-12 justify-content-evenly col-sm-6 col-lg-4 col-xl-3 d-flex mb-3 workhour">
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-danger rounded-pill px-2 mb-1 mb-sm-0">Sunday</div>
+              </div>
+              <div class="d-flex">
+              <div class="fs-6 btn btn-outline-secondary rounded-pill px-2"><i class="far fa-clock"></i> 8AM TO 12PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mb-5 mt-2">
+        <div class="row">
+          <div class="col-12 my-4 text-center">
+            <h2 class="fplay">Our Services</h2>
+            <hr size="4" width="140px" class="mx-auto bg-danger opacity-100">
+            <h6>This is what we do and we do it perfectly.</h6>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3 my-3">
+            <div class="text-center p-2 rounded-3 shadow">
+              <i class="fas fa-pizza-slice fs-1 text-danger my-3"></i>
+              <h4>Fresh Healthy Food</h4>
+              <h6 class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum egestas nunc sed ultricies.</h6>
+            </div>  
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3 my-3">
+            <div class="text-center p-2 rounded-3 shadow bg-danger text-white">
+              <i class="fas fa-truck fs-1 my-3"></i>
+              <h4>Free Fast Home Delivery</h4>
+              <h6 class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum egestas nunc sed ultricies.</h6>
+            </div>             
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3 my-3">
+            <div class="text-center p-2 rounded-3 shadow">
+              <i class="fas fa-tag fs-1 text-danger my-3"></i>
+              <h4>Discount Voucher</h4>
+              <h6 class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum egestas nunc sed ultricies.</h6>
+            </div>             
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3 my-3">
+            <div class=" text-center p-2 rounded-3 shadow bg-danger text-white">
+              <i class="far fa-clock fs-1 my-3"></i>
+              <h4>On Time Service</h4>
+              <h6 class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum egestas nunc sed ultricies.</h6>
+            </div>            
+          </div>
+        </div>
+        <div class="row row-gutter">
+          <div class="col-12 d-md-flex my-3 aboutdivshadow rounded-3">
+            <div class="col-12 mx-auto col-md-6 order-md-2 aboutincredients">
+              <img src="image/incredients.jpg" alt="" class="w-100 d-md-none">
+            </div>
+            <div class="col-10 mx-auto col-md-6 p-md-5 p-2 order-md-1">
+              <h5 class="fw-bold mt-2 fplay fs-2">No good salad starts with stale lettuce.</h5>
+              <hr size="5px" width="40px" class="bg-warning opacity-100 my-3">
+              <h6>We’re ruthless about goodness. We have no qualms about tearing up a day-old lettuce leaf (straight from the farm), or steaming a baby (carrot). Cut. Cut. Chop. Chop. Steam. Steam. Stir Stir. While they’re still young and fresh - that’s our motto. It makes the kitchen a better place.</h6>
+            </div>
+          </div>
+          <div class="col-12 d-md-flex my-3 aboutdivshadow rounded-3">
+            <div class="col-12 mx-auto col-md-6 aboutmenu">
+              <img src="image/menu.jpg" alt="" class="w-100 d-md-none">
+            </div>
+            <div class="col-10 mx-auto col-md-6 p-md-5 p-2">
+              <h5 class="fw-bold mt-2 fplay fs-2">Life is one thing after another. Don’t make it the same thing after another.</h5>
+              <hr size="5px" width="40px" class="bg-warning opacity-100 my-3">
+              <h6>Our menu changes daily because we don’t believe in boring you (or ourselves). We also like to keep you guessing. Cliff-hangers, that’s what we believe in. But here’s a spoiler. The menu changes, the goodness doesn’t.</h6>
+            </div>
+          </div>
+          <div class="col-12 d-md-flex my-3 aboutdivshadow rounded-3">
+            <div class="col-12 mx-auto col-md-6 order-md-2 aboutchefs">
+              <img src="image/chefs.jpg" alt="" class="w-100 d-md-none">
+            </div>
+            <div class="col-10 mx-auto col-md-6 p-md-5 p-2 order-md-1">
+              <h5 class="fw-bold mt-2 fplay fs-2">Chefs who make the onions weep.</h5>
+              <hr size="5px" width="40px" class="bg-warning opacity-100 my-3">
+              <h6>They make sauces sing and salads dance. They create magic with skill, knowledge, passion, and stirring spoons (among other things). They make goodness so good, it doesn’t know what to do with itself. We do though. We send it to you.</h6>
+            </div>
+          </div>
+          <div class="col-12 d-md-flex my-3 aboutdivshadow rounded-3">
+            <div class="col-12 mx-auto col-md-6 aboutcousin">
+              <img src="image/cousin.jpg" alt="" class="w-100 d-md-none">
+            </div>
+            <div class="col-10 mx-auto col-md-6 p-md-5 p-2">
+              <h5 class="fw-bold mt-2 fplay fs-2">We can't help you travel the world. But we can help you taste it</h5>
+              <hr size="5px" width="40px" class="bg-warning opacity-100 my-3">
+              <h6>Go ahead. Eat Spain, its fresh salads and delicious paella. Eat Mexico, its soft burrito wraps and its grilled meat and its colourful vegetables. Eat South Asia, all of it, from Thailand to Vietnam to Japan. The world - at least, its food - is full of goodness. And you shouldn’t need a plane ticket to experience it.</h6>
+            </div>
+          </div>
+          <div class="col-12 d-md-flex my-3 aboutdivshadow rounded-3">
+            <div class="col-12 mx-auto col-md-6 order-md-2 aboutdelivery">
+              <img src="image/delivery.jpg" alt="" class="w-100 d-md-none">
+            </div>
+            <div class="col-10 mx-auto col-md-6 p-md-5 p-2 order-md-1">
+              <h5 class="fw-bold mt-2 fplay fs-2">There's no point if it isn't fresh when it reaches you.</h5>
+              <hr size="5px" width="40px" class="bg-warning opacity-100 my-3">
+              <h6>Now we might use fresh ingredients, and we might have expert chefs, but if it took an hour and a half for a delicious fresh meal to reach you, it wouldn't be fresh. It wouldn't be delicious either. Our delivery boys are legendary for always being on time, so you don't have to wait (too long) for goodness.</h6>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- body section end -->
+    
+    <!-- about us footer section start-->
+    <section class="bg-dark pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8 col-sm-7 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Food King</h6>
+            <h6 class="text-white fw-light mb-4">
+              Location: B-25 Harkesh nagar okhla<br>
+              phase-2 New Delhi-110020
+            </h6>
+            <h6 class="text-white fw-light mb-4">
+              Phone no: +91 8652345678<br>
+              Email: foodking@gmail.com
+            </h6>
+            <h5 class="text-white footsocial d-flex mb-3 pt-1">
+              <div class="d-flex mx-auto mx-sm-0">
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-twitter m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-facebook-f m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-instagram m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-skype m-auto"></i></a>
+                <a href="" class=" me-2 rounded-circle footsocialicon text-center d-flex text-decoration-none text-white"><i class="fab fa-linkedin-in m-auto"></i></a>
+              </div>
+            </h5>
+          </div>
+          <div class="col-8 col-sm-5 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Useful Links</h6>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Home</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>About Us</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Services</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Terms of Services</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Privacy policy</a>
+          </div>
+          <div class="col-8 col-sm-5 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Our Services</h6>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>personal Event</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Private Dining</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Business Catering</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Party Consulting</a><br>
+            <a href="" class="text-white fw-light ps-2 text-decoration-none"><i class="fas fa-greater-than fotterlinkicon text-danger me-1 mb-3"></i>Diet Menu</a>
+          </div>
+          <div class="col-8 col-sm-7 col-md-3 text-center text-sm-start">
+            <h6 class="text-white fw-bold mb-3">Our Newsletter</h6>
+            <div></div>
+            <div>
+              <form action="" class="row">
+                <input type="text" name="" id="" class="form-conrol rounded-0 mb-3 mx-auto mx-sm-0 w-75">
+                <button type="text" name="" id="" class="form-control btn-success rounded-0 w-50 mb-3 mx-auto mx-sm-0">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-3 mt-4 text-center copyrightbackground">
+        <div class="text-white copyright fw-bold">&copy; Copyright Foodking. All Rights Reserved</div>
+        <div class="text-white copyright d-flex justify-content-center">
+          <div>Designed by</div>
+          <p class="text-success">&nbsp;Bootstrapmade</p>
+        </div>
+      </div>
+    </section>
+    <!-- about us footer section end-->
+  </body>
+</html>
